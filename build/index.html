@@ -1,195 +1,250 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Books App</title>
-</head>
+  </head>
 
-<body class=" dark:bg-black dark:text-white">
-    <header class="bg-slate-300 top-0 z-10 drop-shadow-2xl sticky ">
-        <section class=" p-4 mx-auto flex justify-between items-center">
-            <h1>
-                <a class="" href="#intro"><img src="./img/Bookzz.png" alt="logo"></a>
-            </h1>
-            <div>
-                <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
-                    &#9776;
-                </button>
+  <body class="dark:bg-black dark:text-white">
+    <header
+      class="bg-slate-300 top-0 z-10 shadow-nav sticky py-4 px-[7.25rem] flex justify-between items-center"
+    >
+      <h1>
+        <a class="" href="#intro">
+          <img src="./img/Bookzz.png" alt="logo" />
+        </a>
+      </h1>
+      <div>
+        <button
+          id="mobile-open-button"
+          class="text-3xl sm:hidden focus:outline-none"
+        >
+          &#9776;
+        </button>
 
-                <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
-                    <a href="#" class="hover:opacity-50">Home</a>
-                    <a href="./about.html" class="hover:opacity-50">About Us</a>
-                    <button class="bg-blue-400 text-white rounded-xl hover:bg-blue-400 text-xs mx-auto px-6 py-4">Get
-                        Started</button>
-                </nav>
-            </div>
-        </section>
+        <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+          <a href="#" class="hover:opacity-50">Home</a>
+          <a href="./about.html" class="hover:opacity-50">About Us</a>
+          <button
+            class="bg-blue-400 text-white rounded-xl hover:bg-blue-400 text-xs mx-auto px-6 py-4"
+          >
+            Get Started
+          </button>
+        </nav>
+      </div>
     </header>
-    <main class="w-full mx-auto">
-        <section id="intro"
-            class="flex flex-col justify-center sm:flex-row p-6 items-center gap-8 mb-12 mt-8 scroll-mt-20">
-            <article class="sm:w-1/2">
-                <h1
-                    class="font-bold text-4xl max-w-md sm:text-5xl sm:text-left text-center dark:text-white font-manrope mb-4">
-                    Encounter
-                    a<br> Wealth
-                    of Books<br> and
-                    Inspiration
-                </h1>
-                <p class="max-w-md sm:text-2xl text-slate-400 sm:text-left text-center dark:text-white lg:text-sm">
-                    We believe that reading is a powerful tool for personal growth and enrichment, and we're excited to
-                    help you discover your next favorite read. So come on in and start exploring the wealth of books and
-                    inspiration that awaits you!
+    <main class="w-full pt-[7.59rem] pb-[6.59rem] px-[7.25rem]">
+      <section
+        id="intro"
+        class="flex flex-col justify-between sm:flex-row items-start gap-[2.88rem] scroll-mt-20 w-full mb-[6.09rem]"
+      >
+        <article class="max-w-[36.8125rem]">
+          <h1
+            class="text-[#3B3C3D] max-w-[35.9375rem] font-extrabold text-[3.875rem] sm:text-left text-center dark:text-white font-manrope mb-4"
+          >
+            Encounter a Wealth of Books and Inspiration
+          </h1>
+          <p
+            class="max-w-md sm:text-2xl text-slate-400 sm:text-left text-center dark:text-white lg:text-sm"
+          >
+            We believe that reading is a powerful tool for personal growth and
+            enrichment, and we're excited to help you discover your next
+            favorite read. So come on in and start exploring the wealth of books
+            and inspiration that awaits you!
+          </p>
+          <div class="mt-[1.73rem] w-full">
+            <button
+              class="bg-blue-400 text-white rounded-xl hover:bg-blue-400 text-xs mx-auto px-6 py-4"
+            >
+              Buy Now
+            </button>
+          </div>
+        </article>
+        <div class="h-[21.81106rem] w-[35.3125rem]">
+          <img
+            class="w-full h-full object-contain"
+            src="./img/5883085-removebg-preview_auto_x2 1.png"
+            alt="read-image"
+          />
+        </div>
+      </section>
+      <section id="best-sellers" class="text-center mb-4">
+        <h1 class="text font-bold text-3xl text-center mb-1">Best Sellers</h1>
+        <p class="text-slate-600 text-center p-4 dark:text-white">
+          A must read book for anyone who is exploring philosophical ideas
+          through a comelling and engaging story and interested in exploring
+          themes such as cultural indifference
+        </p>
+        <ul
+          class="list-none flex flex-col items-start justify-between sm:flex-row mx-auto w-full gap-[3.12rem]"
+        >
+          <li class="flex flex-col w-auto max-w-[22.9375rem]">
+            <div class="w-full rounded-t-[1.25rem]">
+              <img
+                class="w-full h-full object-contain rounded-t-[1.25rem]"
+                src="./img/IMG-1045 1.png"
+                alt="best-selling-1 "
+              />
+            </div>
+            <div class="rounded-b-[1.25rem] border border-[#B0B2B4] pt-[0.62rem] px-[0.88rem] pb-5">
+              <p class="text font-bold text-xl lg:text-lg">
+                Crack the Code <span class="text-xs"> ⭐ 4.3</span>
+              </p>
 
-
-                </p>
-                <div class="text-center m-6">
-                    <button class="bg-blue-400 text-white rounded-xl hover:bg-blue-400 text-xs mx-auto px-6 py-4">Buy
-                        Now
-                    </button>
+              <div class="">
+                <div class="">
+                  <button
+                    class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2 lg:mb-2"
+                  >
+                    Biography
+                  </button>
+                  <button
+                    class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2"
+                  >
+                    Racism
+                  </button>
+                  <button
+                    class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2"
+                  >
+                    Western
+                  </button>
                 </div>
 
-            </article>
-            <img class="w-1/2" src="./img/5883085-removebg-preview_auto_x2 1.png" alt="read-image">
+                <p
+                  class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs"
+                >
+                  A must read book for anyone who is exploring philosophical
+                  ideas through a comelling and engaging story and interested in
+                  exploring themes such as cultural indifference
+                </p>
 
-        </section>
-        <section id="best-sellers" class="text-center mb-4">
-            <h1 class="text font-bold text-3xl text-center mb-1">
-                Best Sellers
-            </h1>
-            <p class="text-slate-600 text-center p-4 dark:text-white">
-                A must read book for anyone who is exploring philosophical ideas through a comelling and engaging story
-                and interested in exploring themes such as cultural indifference
-            </p>
-            <ul class="list-none flex flex-col sm:flex-row mx-auto items-center gap-0">
-                <li class="flex flex-col border-none py-5 px-7 rounded-2xl">
-                    <img class="rounded-2xl" src="./img/IMG-1045 1.png" alt="best-selling-1 ">
-                    <div class="inline-block">
-                        <p class="text font-bold text-xl p-2 lg:text-lg">Crack the Code <span class="text-xs"> ⭐
-                                4.3</span></p>
+                <div class="flex">
+                  <div class="lg:w-1/2">
+                    <button
+                      class="bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4"
+                    >
+                      Buy Book
+                    </button>
+                  </div>
+                  <div class="px-6 mt-4 lg:w-1/2 lg:px-4">
+                    <span class="pt-2"
+                      >N7,500<sup><del>N8,600</del></sup></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-                    </div>
-                    <div class="">
-                        <div class="">
-                            <button
-                                class=" text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2 lg:mb-2  ">Biography</button>
-                            <button class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2">Racism</button>
-                            <button class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2">Western</button>
-                        </div>
+          <!-- <li class="flex flex-col border-none py-5 px-7 rounded-2xl">
+            <img
+              class="rounded-2xl"
+              src="./img/IMG-1042 1.png"
+              alt="best-selling-1 "
+            />
+            <div class="inline-block">
+              <p class="text font-bold text-xl p-2 lg:text-lg">
+                Sunset Kiss <span class="text-xs"> ⭐ 4.5</span>
+              </p>
+            </div>
+            <div class="">
+              <div class="">
+                <button
+                  class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2 lg:mb-2"
+                >
+                  Biography
+                </button>
+                <button
+                  class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2"
+                >
+                  Racism
+                </button>
+                <button
+                  class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2"
+                >
+                  Western
+                </button>
+              </div>
 
-                        <p class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs">A must read book for anyone
-                            who is
-                            exploring
-                            philosophical
-                            ideas through a
-                            comelling and
-                            engaging story and interested in exploring themes such as cultural indifference</p>
+              <p class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs">
+                A must read book for anyone who is exploring philosophical ideas
+                through a comelling and engaging story and interested in
+                exploring themes such as cultural indifference
+              </p>
 
-                        <div class="flex">
-                            <div class="lg:w-1/2">
-                                <button class=" bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4
-                                ">Buy
-                                    Book
-                                </button>
-                            </div>
-                            <div class="px-6 mt-4 lg:w-1/2 lg:px-4">
-                                <span class="pt-2">N7,500<sup><del>N8,600</del></sup></span>
-                            </div>
-                        </div>
+              <div class="flex">
+                <div class="lg:w-1/2">
+                  <button
+                    class="bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4"
+                  >
+                    Buy Book
+                  </button>
+                </div>
+                <div class="px-6 mt-4 lg:w-1/2 lg:px-6">
+                  <span class="pt-2"
+                    >N7,500<sup><del>N8,600</del></sup></span
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="flex flex-col border-none py-5 px-7 rounded-2xl">
+            <img
+              class="rounded-2xl"
+              src="./img/IMG-1043 1.png"
+              alt="best-selling-1 "
+            />
+            <div class="inline-block">
+              <p class="text font-bold text-xl p-2 lg:text-lg">
+                Say You'll be Mine <span class="text-xs"> ⭐ 4.5</span>
+              </p>
+            </div>
+            <div class="">
+              <div class="">
+                <button
+                  class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2 lg:mb-2"
+                >
+                  Biography
+                </button>
+                <button
+                  class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2"
+                >
+                  Racism
+                </button>
+                <button
+                  class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2"
+                >
+                  Western
+                </button>
+              </div>
 
+              <p class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs">
+                A must read book for anyone who is exploring philosophical ideas
+                through a comelling and engaging story and interested in
+                exploring themes such as cultural indifference
+              </p>
 
-                    </div>
-
-
-
-                <li class="flex flex-col border-none py-5 px-7 rounded-2xl">
-                    <img class="rounded-2xl" src="./img/IMG-1042 1.png" alt="best-selling-1 ">
-                    <div class="inline-block">
-                        <p class="text font-bold text-xl p-2 lg:text-lg">Sunset Kiss <span class="text-xs"> ⭐
-                                4.5</span></p>
-
-                    </div>
-                    <div class="">
-                        <div class="">
-                            <button
-                                class=" text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2 lg:mb-2 ">Biography</button>
-                            <button class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2">Racism</button>
-                            <button class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2">Western</button>
-                        </div>
-
-                        <p class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs">A must read book for anyone
-                            who is
-                            exploring
-                            philosophical
-                            ideas through a
-                            comelling and
-                            engaging story and interested in exploring themes such as cultural indifference</p>
-
-                        <div class="flex">
-                            <div class="lg:w-1/2">
-                                <button class=" bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4
-                                    ">Buy
-                                    Book
-                                </button>
-                            </div>
-                            <div class="px-6 mt-4 lg:w-1/2 lg:px-6">
-                                <span class="pt-2">N7,500<sup><del>N8,600</del></sup></span>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-
-                </li>
-                <li class="flex flex-col border-none py-5 px-7 rounded-2xl">
-                    <img class="rounded-2xl" src="./img/IMG-1043 1.png" alt="best-selling-1 ">
-                    <div class="inline-block">
-                        <p class="text font-bold text-xl p-2 lg:text-lg">Say You'll be Mine <span class="text-xs"> ⭐
-                                4.5</span></p>
-
-                    </div>
-                    <div class="">
-                        <div class="">
-                            <button
-                                class=" text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2 lg:mb-2 ">Biography</button>
-                            <button class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2">Racism</button>
-                            <button class="text-xs text-slate-400 rounded-xl bg-blue-100 px-3 py-2">Western</button>
-                        </div>
-
-                        <p class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs">A must read book for anyone
-                            who is
-                            exploring
-                            philosophical
-                            ideas through a
-                            comelling and
-                            engaging story and interested in exploring themes such as cultural indifference</p>
-
-                        <div class="flex">
-                            <div class="lg:w-1/2">
-                                <button class=" bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4
-                                ">Buy
-                                    Book
-                                </button>
-                            </div>
-                            <div class="px-6 mt-4 lg:w-1/2 lg:px-6">
-                                <span class="pt-2">N7,500<sup><del>N8,600</del></sup></span>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-
-                </li>
-            </ul>
-        </section>
-        <!-- <section class="bg-blue-300">
+              <div class="flex">
+                <div class="lg:w-1/2">
+                  <button
+                    class="bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4"
+                  >
+                    Buy Book
+                  </button>
+                </div>
+                <div class="px-6 mt-4 lg:w-1/2 lg:px-6">
+                  <span class="pt-2"
+                    >N7,500<sup><del>N8,600</del></sup></span
+                  >
+                </div>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+      </section>
+      <!-- <section class="bg-blue-300">
             <ul class="list-none flex flex-col xs:flex-row sm:flex-row mx-auto items-center gap-8">
                 <li class="flex flex-col xs:w-1/2 text-center">
                     <img class="" src="./img/material-symbols_bolt.png" alt="bolt-image">
@@ -215,380 +270,472 @@
             </ul>
         </section> -->
 
+      <section id="special_offers" class="mt-8 mb-8">
+        <h1 class="text font-bold text-3xl mb-5">Special Offers</h1>
 
-        <section id="special_offers" class="mt-8 mb-8">
-            <h1 class="text font-bold text-3xl mb-5">
-                Special Offers
-            </h1>
-
-            <ul class="list-none flex flex-col sm:flex-row mx-auto items-center gap-3">
-                <li class="flex flex-col border-none py-1 px-2 mb-6 rounded-2xl lg:w-3/12">
-                    <img class="rounded-2xl" src="./img/IMG-1040 1.png" alt="best-selling-1 ">
-                    <div class=" "> <!-- trying to use this div to place a border around the caption -->
-                        <div class="inline-block">
-                            <p class="text font-bold text-xl p-2 lg:text-lg">Our Last Summer <br> <span class="text-xs">
-                                    ⭐
-                                    4.7</span></p>
-
-                        </div>
-                        <div class="">
-
-                            <p class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs ">A must read book
-                                for
-                                anyone
-                                who is
-                                exploring
-                                philosophical
-                                ideas through ...<span class="text-blue-300 font-bold">See more</span></p>
-
-                            <div class="flex">
-                                <div class="lg:w-1/2">
-                                    <button class=" bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4
-                            ">Buy
-                                        Book
-                                    </button>
-                                </div>
-                                <div class="px-6 mt-4 lg:w-1/2 lg:px-6">
-                                    <span class="pt-2">N7,500<sup><del>N8,600</del></sup></span>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </li>
-
-                <li class="flex flex-col border-none py-1 px-2 mb-6 rounded-2xl lg:w-3/12">
-                    <img class="rounded-2xl" src="./img/IMG-1057 1.png" alt="best-selling-1 ">
-                    <div class=" "> <!-- trying to use this div to place a border around the caption -->
-                        <div class="inline-block">
-                            <p class="text font-bold text-xl p-2 lg:text-lg">How I visited the ... <br><span
-                                    class="text-xs"> ⭐
-                                    4.7</span></p>
-
-                        </div>
-                        <div class="">
-
-                            <p class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs ">A must read book
-                                for
-                                anyone
-                                who is
-                                exploring
-                                philosophical
-                                ideas through ...<span class="text-blue-300 font-bold">See more</span></p>
-
-                            <div class="flex">
-                                <div class="lg:w-1/2">
-                                    <button class=" bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4
-                            ">Buy
-                                        Book
-                                    </button>
-                                </div>
-                                <div class="px-6 mt-4 lg:w-1/2 lg:px-6">
-                                    <span class="pt-2">N7,500<sup><del>N8,600</del></sup></span>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </li>
-
-                <li class="flex flex-col border-none py-1 px-2 mb-6 rounded-2xl lg:w-3/12">
-                    <img class="rounded-2xl" src="./img/IMG-1056 1.png" alt="best-selling-1 ">
-                    <div class=" "> <!-- trying to use this div to place a border around the caption -->
-                        <div class="inline-block">
-                            <p class="text font-bold text-xl p-2 lg:text-lg">Finding Europe Thr... <br><span
-                                    class="text-xs"> ⭐
-                                    4.7</span></p>
-
-                        </div>
-                        <div class="">
-
-                            <p class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs ">A must read book
-                                for
-                                anyone
-                                who is
-                                exploring
-                                philosophical
-                                ideas through ...<span class="text-blue-300 font-bold">See more</span></p>
-
-                            <div class="flex">
-                                <div class="lg:w-1/2">
-                                    <button class=" bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4
-                            ">Buy
-                                        Book
-                                    </button>
-                                </div>
-                                <div class="px-6 mt-4 lg:w-1/2 lg:px-6">
-                                    <span class="pt-2">N7,500<sup><del>N8,600</del></sup></span>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </li>
-
-                <li class="flex flex-col border-none py-1 px-2 mb-6 rounded-2xl lg:w-3/12">
-                    <img class="rounded-2xl" src="./img/IMG-1054 1.png" alt="best-selling-1 ">
-                    <div class=" "> <!-- trying to use this div to place a border around the caption -->
-                        <div class="inline-block">
-                            <p class="text font-bold text-xl p-2 lg:text-lg">The Backyard Un... <br><span
-                                    class="text-xs"> ⭐
-                                    4.7</span></p>
-
-                        </div>
-                        <div class="">
-
-                            <p class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs ">A must read book
-                                for
-                                anyone
-                                who is
-                                exploring
-                                philosophical
-                                ideas through ...<span class="text-blue-300 font-bold">See more</span></p>
-
-                            <div class="flex">
-                                <div class="lg:w-1/2">
-                                    <button class=" bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4
-                            ">Buy
-                                        Book
-                                    </button>
-                                </div>
-                                <div class="px-6 mt-4 lg:w-1/2 lg:px-6">
-                                    <span class="pt-2">N7,500<sup><del>N8,600</del></sup></span>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </li>
-
-
-
-            </ul>
-        </section>
-
-        <section id="Recommended-books">
-            <h1 class="text font-bold text-3xl text-center mb-1">
-                Recommended Books
-            </h1>
-            <p class="text-slate-600 text-center p-4 dark:text-white">
-                A must read book for anyone who is exploring philosophical ideas through a comelling and engaging story
-                and interested in exploring themes such as cultural indifference
-            </p>
-            <ul class="list-none flex flex-col sm:flex-row mx-auto items-center w-full">
-                <li class="flex flex-col py-5 px-7 rounded-2xl items-center hover:border lg:list-item w-2/5">
-                    <img class="rounded-2xl" src="./img/IMG-1050 1.png" alt="best-selling-1 ">
-                </li>
-                <li class="flex flex-col py-5 px-7 rounded-2xl items-center hover:border w-2/5">
-                    <img class="rounded-2xl" src="./img/IMG-1049 1.png" alt="best-selling-1 ">
-                </li>
-                <li class="flex flex-col hover:border py-5 px-7 rounded-2xl items-center w-2/5">
-                    <img class="rounded-2xl" src="./img/IMG-1051 1.png" alt="best-selling-1 ">
-                    <div class="inline-block mt-3">
-                        <p class="text font-bold text-xl lg:text-lg">Hiking Journey</p>
-                    </div>
-                    <p class="my-2"><span class="">N7,500</span></p>
-                    </div>
-                    <div class="lg:w-1/2">
-                        <button class=" bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4
-                                ">Buy
-                            Book
-                        </button>
-                    </div>
-                </li>
-                <li class="flex flex-col  py-5 px-7 rounded-2xl items-center hover:border w-2/5">
-                    <img class="rounded-2xl" src="./img/IMG-1053 1.png" alt="best-selling-1 ">
-                </li>
-                <li class="flex flex-col py-5 px-7 rounded-2xl items-center hover:border w-2/5">
-                    <img class="rounded-2xl" src="./img/IMG-1052 1.png" alt="best-selling-1 ">
-                </li>
-            </ul>
-        </section>
-        <section id="favorite-section"
-            class="flex flex-col justify-center sm:flex-row p-6 items-center gap-9 mb-12 mt-8 scroll-mt-20">
-            <img class="w-1/4" src="./img/emojione_books.png" alt="book-image">
-            <article class="sm:w-1/2 ml-6">
-                <h1
-                    class="font-bold text-2xl max-w-md sm:text-3xl sm:text-left text-center dark:text-white font-manrope mb-4">
-                    Find your next favorite read from our carefully curated book collection.
-                </h1>
-                <p class="max-w-md sm:text-2xl text-slate-400 sm:text-left text-center dark:text-white lg:text-sm">
-                    We believe that reading is a powerful tool for personal growth and enrichment, and we're excited to
-                    help you discover your next favorite read. So come on in and start exploring the wealth of books and
-                    inspiration that awaits you!
-
+        <ul
+          class="list-none flex flex-col sm:flex-row mx-auto items-center gap-3"
+        >
+          <li
+            class="flex flex-col border-none py-1 px-2 mb-6 rounded-2xl lg:w-3/12"
+          >
+            <img
+              class="rounded-2xl"
+              src="./img/IMG-1040 1.png"
+              alt="best-selling-1 "
+            />
+            <div class=" ">
+              <!-- trying to use this div to place a border around the caption -->
+              <div class="inline-block">
+                <p class="text font-bold text-xl p-2 lg:text-lg">
+                  Our Last Summer <br />
+                  <span class="text-xs"> ⭐ 4.7</span>
                 </p>
-                <div class="my-2">
-                    <button class="bg-blue-400 text-white rounded-xl hover:bg-blue-400 text-xs mx-auto px-6 py-4">Buy
-                        Now
+              </div>
+              <div class="">
+                <p
+                  class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs"
+                >
+                  A must read book for anyone who is exploring philosophical
+                  ideas through ...<span class="text-blue-300 font-bold"
+                    >See more</span
+                  >
+                </p>
+
+                <div class="flex">
+                  <div class="lg:w-1/2">
+                    <button
+                      class="bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4"
+                    >
+                      Buy Book
                     </button>
+                  </div>
+                  <div class="px-6 mt-4 lg:w-1/2 lg:px-6">
+                    <span class="pt-2"
+                      >N7,500<sup><del>N8,600</del></sup></span
+                    >
+                  </div>
                 </div>
-
-            </article>
-
-
-        </section>
-        <section id="Hear-from-users" class="mb-9">
-            <h1 class="text font-bold text-3xl text-center mb-10">
-                Hear From Our Happy Readers
-            </h1>
-
-            <ul class="list-none flex gap-6 ">
-                <li class="">
-                    <div class="flex flex-col bg-blue-50 dark:bg-slate-200 rounded-xl relative pb-3">
-                        <img class="w-12 h-12 relative bottom-6 left-3" src="./img/Ellipse 1.png" alt="image">
-                        <p class="text-slate-500 p-3 text-xs">A must read book for anyone who is exploring philosophical
-                            ideas
-                            through a
-                            comelling and engaging
-                            story and interested in exploring themes such as cultural indifference interested in
-                            exploring
-                            themes</p>
-                        <h5 class="text-bold text-xs ml-3">Adumeta chinedu</h5>
-                        <p class="text-xs ml-3 text-slate-400">UI Designer, Apple Inc. <span class="text-xs ml-8"> ⭐
-                                4.5</span></p>
-                    </div>
-                </li>
-                <li class="">
-                    <div class="flex flex-col bg-blue-50 dark:bg-slate-200 rounded-xl relative pb-3">
-                        <img class="w-12 h-12 relative bottom-6 left-3" src="./img/Ellipse 21.png" alt="image">
-                        <p class="text-slate-500 p-3 text-xs">A must read book for anyone who is exploring philosophical
-                            ideas
-                            through a
-                            comelling and engaging
-                            story and interested in exploring themes such as cultural indifference interested in
-                            exploring
-                            themes</p>
-                        <h5 class="text-bold text-xs ml-3">Alisha Gazel</h5>
-                        <p class="text-xs ml-3 text-slate-400">UX Writer, Google <span class="text-xs ml-8"> ⭐
-                                4.5</span></p>
-                    </div>
-                </li>
-                <li class="">
-                    <div class="flex flex-col bg-blue-50 dark:bg-slate-200 rounded-xl relative pb-3">
-                        <img class="w-12 h-12 relative bottom-6 left-3" src="./img/Ellipse 22.png" alt="image">
-                        <p class="text-slate-500 p-3 text-xs">A must read book for anyone who is exploring philosophical
-                            ideas
-                            through a
-                            comelling and engaging
-                            story and interested in exploring themes such as cultural indifference interested in
-                            exploring
-                            themes</p>
-                        <h5 class="text-bold text-xs ml-3">Sheriff Baba T</h5>
-                        <p class="text-xs ml-3 text-slate-400">Frontend developer AirBnB <span class="text-xs ml-8"> ⭐
-                                4.5</span></p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section id="newsletter" class="mb-12">
-            <div class="" style="background-image:url(./img/Frame\ 183.png); height:200px; width:100%">
-
-
+              </div>
             </div>
+          </li>
 
-        </section>
-        <section id="Book_Categories">
-            <h3 class="my-6 font-bold">Book Categories</h3>
-            <ul class="list-none flex gap-3 lg:w-full">
-                <li class="lg:w-1/5">
-                    <div class="flex flex-col pb-3">
-                        <ul class="list-none">
-                            <li class="p-2 text-xs">Architecture</li>
-                            <li class="p-2 text-xs">Love and Romance</li>
-                            <li class="p-2 text-xs">Science and Technology</li>
-                            <li class="p-2 text-xs">Young Adult</li>
-                            <li class="p-2 text-xs">Science Fiction</li>
-                            <li class="p-2 text-xs">Children Literature</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="lg:w-1/5">
-                    <div class="flex flex-col pb-3">
-                        <ul class="list-none">
-                            <li class="p-2 text-xs">Bio & Autobiography</li>
-                            <li class="p-2 text-xs">Craft and Hobbies</li>
-                            <li class="p-2 text-xs">Family and Relationship</li>
-                            <li class="p-2 text-xs">Horror</li>
-                            <li class="p-2 text-xs">Comedy</li>
-                            <li class="p-2 text-xs">Tradition and Culture</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="lg:w-1/5">
-                    <div class="flex flex-col pb-3">
-                        <ul class="list-none">
-                            <li class="p-2 text-xs">Mathematics</li>
-                            <li class="p-2 text-xs">Action</li>
-                            <li class="p-2 text-xs">Thriller</li>
-                            <li class="p-2 text-xs">Sex</li>
-                            <li class="p-2 text-xs">Non Fiction</li>
-                            <li class="p-2 text-xs">World History</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="lg:w-1/5">
-                    <div class="flex flex-col pb-3">
-                        <ul class="list-none">
-                            <li class="p-2 text-xs">Architecture</li>
-                            <li class="p-2 text-xs">Education</li>
-                            <li class="p-2 text-xs">Drama</li>
-                            <li class="p-2 text-xs">Music</li>
-                            <li class="p-2 text-xs">Politics</li>
-                            <li class="p-2 text-xs">Religion</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="lg:w-1/5">
-                    <div class="flex flex-col pb-3">
-                        <ul class="list-none">
-                            <li class="p-2 text-xs">Medical</li>
-                            <li class="p-2 text-xs">Nature</li>
-                            <li class="p-2 text-xs">Anime</li>
-                            <li class="p-2 text-xs">Racism</li>
-                            <li class="p-2 text-xs">War</li>
-                            <li class="p-2 text-xs text-blue-400"><a href="#">See More</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+          <li
+            class="flex flex-col border-none py-1 px-2 mb-6 rounded-2xl lg:w-3/12"
+          >
+            <img
+              class="rounded-2xl"
+              src="./img/IMG-1057 1.png"
+              alt="best-selling-1 "
+            />
+            <div class=" ">
+              <!-- trying to use this div to place a border around the caption -->
+              <div class="inline-block">
+                <p class="text font-bold text-xl p-2 lg:text-lg">
+                  How I visited the ... <br /><span class="text-xs">
+                    ⭐ 4.7</span
+                  >
+                </p>
+              </div>
+              <div class="">
+                <p
+                  class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs"
+                >
+                  A must read book for anyone who is exploring philosophical
+                  ideas through ...<span class="text-blue-300 font-bold"
+                    >See more</span
+                  >
+                </p>
 
-        </section>
-        <hr>
-        <section id="Footer" class="flex flex-col gap-3 py-12 w-full">
-            <div class="flex">
-                <article class="w-2/6">
-                    <img class="text-xs" src="./img/Bookzz.png" alt="logo">
-                    <p class="text-xs my-4">
-                        A must read book for anyone who is exploring philosophical ideas through a comelling and
-                        engaging
-                        story and interested in exploring themes such as cultural indifference interested in exploring
-                        themes
-                    </p>
-                </article>
-                <div class="w-2/6 text-xs m-auto justify-self-start">
-                    <h3 class="my-3 font-bold">Get in Touch Us</h3>
-                    <p class="my-3">📍 1 Ogunlesi street, Onipanu, lagos</p>
-                    <p class="my-3">📞 +234 814 6745 450</p>
-                    <p>✉️ support@bookers.com</p>
+                <div class="flex">
+                  <div class="lg:w-1/2">
+                    <button
+                      class="bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4"
+                    >
+                      Buy Book
+                    </button>
+                  </div>
+                  <div class="px-6 mt-4 lg:w-1/2 lg:px-6">
+                    <span class="pt-2"
+                      >N7,500<sup><del>N8,600</del></sup></span
+                    >
+                  </div>
                 </div>
-                <div class="w-2/6 text-xs p-2">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.9150507639283!2d-0.24477712267617585!3d51.752876921870374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48763c63ec456853%3A0x914d13f91468d5da!2sHatfield%20AL10%209AB!5e0!3m2!1sen!2suk!4v1700744189740!5m2!1sen!2suk"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+              </div>
             </div>
-            <p class="text-center text-xs">&copy Christopher</p>
-        </section>
+          </li>
+
+          <li
+            class="flex flex-col border-none py-1 px-2 mb-6 rounded-2xl lg:w-3/12"
+          >
+            <img
+              class="rounded-2xl"
+              src="./img/IMG-1056 1.png"
+              alt="best-selling-1 "
+            />
+            <div class=" ">
+              <!-- trying to use this div to place a border around the caption -->
+              <div class="inline-block">
+                <p class="text font-bold text-xl p-2 lg:text-lg">
+                  Finding Europe Thr... <br /><span class="text-xs">
+                    ⭐ 4.7</span
+                  >
+                </p>
+              </div>
+              <div class="">
+                <p
+                  class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs"
+                >
+                  A must read book for anyone who is exploring philosophical
+                  ideas through ...<span class="text-blue-300 font-bold"
+                    >See more</span
+                  >
+                </p>
+
+                <div class="flex">
+                  <div class="lg:w-1/2">
+                    <button
+                      class="bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4"
+                    >
+                      Buy Book
+                    </button>
+                  </div>
+                  <div class="px-6 mt-4 lg:w-1/2 lg:px-6">
+                    <span class="pt-2"
+                      >N7,500<sup><del>N8,600</del></sup></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="flex flex-col border-none py-1 px-2 mb-6 rounded-2xl lg:w-3/12"
+          >
+            <img
+              class="rounded-2xl"
+              src="./img/IMG-1054 1.png"
+              alt="best-selling-1 "
+            />
+            <div class=" ">
+              <!-- trying to use this div to place a border around the caption -->
+              <div class="inline-block">
+                <p class="text font-bold text-xl p-2 lg:text-lg">
+                  The Backyard Un... <br /><span class="text-xs"> ⭐ 4.7</span>
+                </p>
+              </div>
+              <div class="">
+                <p
+                  class="text-xl text-slate-400 py-4 dark:text-white lg:text-xs"
+                >
+                  A must read book for anyone who is exploring philosophical
+                  ideas through ...<span class="text-blue-300 font-bold"
+                    >See more</span
+                  >
+                </p>
+
+                <div class="flex">
+                  <div class="lg:w-1/2">
+                    <button
+                      class="bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4"
+                    >
+                      Buy Book
+                    </button>
+                  </div>
+                  <div class="px-6 mt-4 lg:w-1/2 lg:px-6">
+                    <span class="pt-2"
+                      >N7,500<sup><del>N8,600</del></sup></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="Recommended-books">
+        <h1 class="text font-bold text-3xl text-center mb-1">
+          Recommended Books
+        </h1>
+        <p class="text-slate-600 text-center p-4 dark:text-white">
+          A must read book for anyone who is exploring philosophical ideas
+          through a comelling and engaging story and interested in exploring
+          themes such as cultural indifference
+        </p>
+        <ul
+          class="list-none flex flex-col sm:flex-row mx-auto items-center w-full"
+        >
+          <li
+            class="flex flex-col py-5 px-7 rounded-2xl items-center hover:border lg:list-item w-2/5"
+          >
+            <img
+              class="rounded-2xl"
+              src="./img/IMG-1050 1.png"
+              alt="best-selling-1 "
+            />
+          </li>
+          <li
+            class="flex flex-col py-5 px-7 rounded-2xl items-center hover:border w-2/5"
+          >
+            <img
+              class="rounded-2xl"
+              src="./img/IMG-1049 1.png"
+              alt="best-selling-1 "
+            />
+          </li>
+          <li
+            class="flex flex-col hover:border py-5 px-7 rounded-2xl items-center w-2/5"
+          >
+            <img
+              class="rounded-2xl"
+              src="./img/IMG-1051 1.png"
+              alt="best-selling-1 "
+            />
+            <div class="inline-block mt-3">
+              <p class="text font-bold text-xl lg:text-lg">Hiking Journey</p>
+            </div>
+            <p class="my-2"><span class="">N7,500</span></p>
+            <!-- </div> -->
+            <div class="lg:w-1/2">
+              <button
+                class="bg-blue-400 text-white rounded-xl hover:bg-blue-200 text-xs px-6 py-4"
+              >
+                Buy Book
+              </button>
+            </div>
+          </li>
+          <li
+            class="flex flex-col py-5 px-7 rounded-2xl items-center hover:border w-2/5"
+          >
+            <img
+              class="rounded-2xl"
+              src="./img/IMG-1053 1.png"
+              alt="best-selling-1 "
+            />
+          </li>
+          <li
+            class="flex flex-col py-5 px-7 rounded-2xl items-center hover:border w-2/5"
+          >
+            <img
+              class="rounded-2xl"
+              src="./img/IMG-1052 1.png"
+              alt="best-selling-1 "
+            />
+          </li>
+        </ul>
+      </section>
+      <section
+        id="favorite-section"
+        class="flex flex-col justify-center sm:flex-row p-6 items-center gap-9 mb-12 mt-8 scroll-mt-20"
+      >
+        <img class="w-1/4" src="./img/emojione_books.png" alt="book-image" />
+        <article class="sm:w-1/2 ml-6">
+          <h1
+            class="font-bold text-2xl max-w-md sm:text-3xl sm:text-left text-center dark:text-white font-manrope mb-4"
+          >
+            Find your next favorite read from our carefully curated book
+            collection.
+          </h1>
+          <p
+            class="max-w-md sm:text-2xl text-slate-400 sm:text-left text-center dark:text-white lg:text-sm"
+          >
+            We believe that reading is a powerful tool for personal growth and
+            enrichment, and we're excited to help you discover your next
+            favorite read. So come on in and start exploring the wealth of books
+            and inspiration that awaits you!
+          </p>
+          <div class="my-2">
+            <button
+              class="bg-blue-400 text-white rounded-xl hover:bg-blue-400 text-xs mx-auto px-6 py-4"
+            >
+              Buy Now
+            </button>
+          </div>
+        </article>
+      </section>
+      <section id="Hear-from-users" class="mb-9">
+        <h1 class="text font-bold text-3xl text-center mb-10">
+          Hear From Our Happy Readers
+        </h1>
+
+        <ul class="list-none flex gap-6">
+          <li class="">
+            <div
+              class="flex flex-col bg-blue-50 dark:bg-slate-200 rounded-xl relative pb-3"
+            >
+              <img
+                class="w-12 h-12 relative bottom-6 left-3"
+                src="./img/Ellipse 1.png"
+                alt="image"
+              />
+              <p class="text-slate-500 p-3 text-xs">
+                A must read book for anyone who is exploring philosophical ideas
+                through a comelling and engaging story and interested in
+                exploring themes such as cultural indifference interested in
+                exploring themes
+              </p>
+              <h5 class="text-bold text-xs ml-3">Adumeta chinedu</h5>
+              <p class="text-xs ml-3 text-slate-400">
+                UI Designer, Apple Inc.
+                <span class="text-xs ml-8"> ⭐ 4.5</span>
+              </p>
+            </div>
+          </li>
+          <li class="">
+            <div
+              class="flex flex-col bg-blue-50 dark:bg-slate-200 rounded-xl relative pb-3"
+            >
+              <img
+                class="w-12 h-12 relative bottom-6 left-3"
+                src="./img/Ellipse 21.png"
+                alt="image"
+              />
+              <p class="text-slate-500 p-3 text-xs">
+                A must read book for anyone who is exploring philosophical ideas
+                through a comelling and engaging story and interested in
+                exploring themes such as cultural indifference interested in
+                exploring themes
+              </p>
+              <h5 class="text-bold text-xs ml-3">Alisha Gazel</h5>
+              <p class="text-xs ml-3 text-slate-400">
+                UX Writer, Google <span class="text-xs ml-8"> ⭐ 4.5</span>
+              </p>
+            </div>
+          </li>
+          <li class="">
+            <div
+              class="flex flex-col bg-blue-50 dark:bg-slate-200 rounded-xl relative pb-3"
+            >
+              <img
+                class="w-12 h-12 relative bottom-6 left-3"
+                src="./img/Ellipse 22.png"
+                alt="image"
+              />
+              <p class="text-slate-500 p-3 text-xs">
+                A must read book for anyone who is exploring philosophical ideas
+                through a comelling and engaging story and interested in
+                exploring themes such as cultural indifference interested in
+                exploring themes
+              </p>
+              <h5 class="text-bold text-xs ml-3">Sheriff Baba T</h5>
+              <p class="text-xs ml-3 text-slate-400">
+                Frontend developer AirBnB
+                <span class="text-xs ml-8"> ⭐ 4.5</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="newsletter" class="mb-12">
+        <div
+          class=""
+          style="
+            background-image: url(./img/Frame\ 183.png);
+            height: 200px;
+            width: 100%;
+          "
+        ></div>
+      </section>
+      <section id="Book_Categories">
+        <h3 class="my-6 font-bold">Book Categories</h3>
+        <ul class="list-none flex gap-3 lg:w-full">
+          <li class="lg:w-1/5">
+            <div class="flex flex-col pb-3">
+              <ul class="list-none">
+                <li class="p-2 text-xs">Architecture</li>
+                <li class="p-2 text-xs">Love and Romance</li>
+                <li class="p-2 text-xs">Science and Technology</li>
+                <li class="p-2 text-xs">Young Adult</li>
+                <li class="p-2 text-xs">Science Fiction</li>
+                <li class="p-2 text-xs">Children Literature</li>
+              </ul>
+            </div>
+          </li>
+          <li class="lg:w-1/5">
+            <div class="flex flex-col pb-3">
+              <ul class="list-none">
+                <li class="p-2 text-xs">Bio & Autobiography</li>
+                <li class="p-2 text-xs">Craft and Hobbies</li>
+                <li class="p-2 text-xs">Family and Relationship</li>
+                <li class="p-2 text-xs">Horror</li>
+                <li class="p-2 text-xs">Comedy</li>
+                <li class="p-2 text-xs">Tradition and Culture</li>
+              </ul>
+            </div>
+          </li>
+          <li class="lg:w-1/5">
+            <div class="flex flex-col pb-3">
+              <ul class="list-none">
+                <li class="p-2 text-xs">Mathematics</li>
+                <li class="p-2 text-xs">Action</li>
+                <li class="p-2 text-xs">Thriller</li>
+                <li class="p-2 text-xs">Sex</li>
+                <li class="p-2 text-xs">Non Fiction</li>
+                <li class="p-2 text-xs">World History</li>
+              </ul>
+            </div>
+          </li>
+          <li class="lg:w-1/5">
+            <div class="flex flex-col pb-3">
+              <ul class="list-none">
+                <li class="p-2 text-xs">Architecture</li>
+                <li class="p-2 text-xs">Education</li>
+                <li class="p-2 text-xs">Drama</li>
+                <li class="p-2 text-xs">Music</li>
+                <li class="p-2 text-xs">Politics</li>
+                <li class="p-2 text-xs">Religion</li>
+              </ul>
+            </div>
+          </li>
+          <li class="lg:w-1/5">
+            <div class="flex flex-col pb-3">
+              <ul class="list-none">
+                <li class="p-2 text-xs">Medical</li>
+                <li class="p-2 text-xs">Nature</li>
+                <li class="p-2 text-xs">Anime</li>
+                <li class="p-2 text-xs">Racism</li>
+                <li class="p-2 text-xs">War</li>
+                <li class="p-2 text-xs text-blue-400">
+                  <a href="#">See More</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section id="Footer" class="flex flex-col gap-3 py-12 w-full">
+        <div class="flex">
+          <article class="w-2/6">
+            <img class="text-xs" src="./img/Bookzz.png" alt="logo" />
+            <p class="text-xs my-4">
+              A must read book for anyone who is exploring philosophical ideas
+              through a comelling and engaging story and interested in exploring
+              themes such as cultural indifference interested in exploring
+              themes
+            </p>
+          </article>
+          <div class="w-2/6 text-xs m-auto justify-self-start">
+            <h3 class="my-3 font-bold">Get in Touch Us</h3>
+            <p class="my-3">📍 1 Ogunlesi street, Onipanu, lagos</p>
+            <p class="my-3">📞 +234 814 6745 450</p>
+            <p>✉️ support@bookers.com</p>
+          </div>
+          <div class="w-2/6 text-xs p-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.9150507639283!2d-0.24477712267617585!3d51.752876921870374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48763c63ec456853%3A0x914d13f91468d5da!2sHatfield%20AL10%209AB!5e0!3m2!1sen!2suk!4v1700744189740!5m2!1sen!2suk"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <p class="text-center text-xs">&copy Christopher</p>
+      </section>
     </main>
-
-
-</body>
-
+  </body>
 </html>
