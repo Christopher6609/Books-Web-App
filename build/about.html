@@ -2,32 +2,487 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Books App</title>
 </head>
 
-<body class=" dark:bg-black dark:text-white">
-    <header class="bg-slate-300 top-0 z-10 drop-shadow-2xl sticky ">
-        <section class=" p-4 mx-auto flex justify-between items-center">
-            <h1>
-                <a class="" href="./index.html"><img src="./img/Bookzz.png" alt="logo"></a>
-            </h1>
-            <div>
-                <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
-                    &#9776;
-                </button>
+<body class="dark:bg-black dark:text-white">
+    <header class="bg-slate-300 top-0 z-10 shadow-nav sticky py-4 px-[7.25rem] flex justify-between items-center">
+        <h1>
+            <a class="" href="./index.html">
+                <img src="./img/Bookzz.png" alt="logo" />
+            </a>
+        </h1>
+        <div>
+            <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
+                &#9776;
+            </button>
 
-                <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
-                    <a href="#" class="hover:opacity-50">Home</a>
-                    <a href="./about.html" class="hover:opacity-50">About Us</a>
-                    <button class="bg-blue-400 text-white rounded-xl hover:bg-blue-400 text-xs mx-auto px-6 py-4">Get
-                        Started</button>
-                </nav>
+            <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                <a href="./index.html" class="hover:opacity-50">Home</a>
+                <a href="./about.html" class="hover:opacity-50">About Us</a>
+                <button class="bg-[#3FB2E5] text-white rounded-xl hover:bg-blue-400 text-xs mx-auto px-6 py-4">
+                    Get Started
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="px-[7.25rem]">
+        <section id="introduction" class=" mt-[7.75rem]">
+            <div class="flex w-full justify-between">
+                <article class="max-w-[43.8125rem]">
+                    <h1 class="text-[#3B3C3D] w-full font-extrabold text-[3.875rem] dark:text-white font-manrope mb-4">
+                        The Bookers - A Passionate Community of Book Lovers
+                    </h1>
+                    <p class="w-[36.8125rem] h-[8.4429rem] text-[#747171] text-[1.25rem] dark:text-white">
+                        We believe that reading is a powerful tool for personal growth and
+                        enrichment, and we're excited to help you discover your next
+                        favorite read. So come on in and start exploring the wealth of books
+                        and inspiration that awaits you!
+                    </p>
+                    <div class="mt-[1.73rem] w-full">
+                        <button
+                            class="bg-[#3FB2E5] text-white rounded-xl hover:bg-blue-400 text-xs w-[12.3125rem] h-[4rem]">
+                            Buy Now
+                        </button>
+                    </div>
+                </article>
+                <div class=" w-[30.5rem]">
+                    <img class="w-full h-full object-contain items-center rounded-3xl" src="./img/IMG-1100 1.png"
+                        alt="read-image" />
+                </div>
             </div>
         </section>
-    </header>
+        <section class=" flex mt-[8.13rem] justify-center">
+            <div class="text-center w-[57.9375rem]">
+                <h1 class="text-[3.4375rem] font-bold">
+                    Our Mission
+                </h1>
+                <p class="mt-[1.5rem] text-[1.25rem] h-[8.4375rem]">
+                    We believe that reading is a powerful tool for personal growth and enrichment, and we're excited to
+                    help you discover your next favorite read. So come on in and start exploring the wealth of books and
+                    inspiration that awaits you!
+                </p>
+            </div>
+        </section>
+        <section class="mt-[9.87rem]">
+            <div class="flex justify-between">
+                <div class="w-[37.0625rem] rounded-2xl shadow-2xl">
+                    <img class="object-contain w-full h-full rounded-2xl" src="./img/IMG-1106 1.png" alt="picture" />
+                </div>
+                <div class="w-[33.9375rem] items-center">
+                    <h1 class="w-full text-[3.4375rem] font-bold mb-[1.06rem]">
+                        Why Choose The Bookers
+                    </h1>
+                    <p class="h-[8.4375rem] text-[1.25rem] text-[#747171]">
+                        We believe that reading is a powerful tool for personal growth and enrichment, and we're excited
+                        to help you discover your next favorite read. So come on in and start exploring the wealth of
+                        books and inspiration that awaits you!
+                    </p>
+                    <button
+                        class="bg-[#3FB2E5] text-white rounded-xl hover:bg-blue-400 text-[1.25rem] w-[12.3125rem] h-[3.8377rem] mt-[3.13rem]">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="mt-[9.94rem]">
+            <div class=" flex justify-center mb-[5.19rem]">
+                <div class="w-[39.75rem] text-center">
+                    <h1 class="text-[3.4375rem] font-bold mb-[1.5rem]">
+                        Meet Our People
+                    </h1>
+                    <p class="text-[#747171] text-[1.25rem]">
+                        We believe that reading is a powerful tool for personal growth and enrichment, and we're excited
+                        to
+                        help you
+                    </p>
+                </div>
+            </div>
+            <div class="flex justify-between mb-[4rem]">
+                <div class=" w-[23.875rem] h-[27rem] bg-[#F1FBFF] rounded-[1.5625rem] pb-[2.38rem]">
+                    <div class="flex items-center justify-center w-full h-[17.63rem]">
+                        <div class="w-[13.8125rem] h-[13.8125rem] rounded-[13.8125rem]">
+                            <img class="object-contain w-full h-full" src="./img/Ellipse 33.png" alt="team">
+                        </div>
+                    </div>
+
+                    <div class=" text-center">
+                        <h3 class="text-[1.5rem] font-[600]">Declan Rice</h3>
+                        <p class="text-[#8D8D8D] text-[1.125rem] my-[1.38rem]">CEO/Founder</p>
+                        <div class="flex justify-center">
+                            <ul class="list-none flex w-[7.25rem] h-[1.1875rem] justify-between">
+                                <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://www.facebook.com" target="_blank"><i
+                                            class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="https://www.indeed.com" target="_blank"><i
+                                            class="fa fa-linkedin-square"></i></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-[23.875rem] h-[27rem] bg-[#F1FBFF] rounded-[1.5625rem] pb-[2.38rem]">
+                    <div class="flex items-center justify-center w-full h-[17.63rem]">
+                        <div class="w-[13.8125rem] h-[13.8125rem] rounded-[13.8125rem]">
+                            <img class="object-contain w-full h-full" src="./img/Ellipse 34.png" alt="team">
+                        </div>
+                    </div>
+
+                    <div class=" text-center">
+                        <h3 class="text-[1.5rem] font-[600]">Maryam Atkinson</h3>
+                        <p class="text-[#8D8D8D] text-[1.125rem] my-[1.38rem]">Sales and Marketing Manager</p>
+                        <div class="flex justify-center">
+                            <ul class="list-none flex w-[7.25rem] h-[1.1875rem] justify-between">
+                                <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://www.facebook.com" target="_blank"><i
+                                            class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="https://www.indeed.com" target="_blank"><i
+                                            class="fa fa-linkedin-square"></i></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-[23.875rem] h-[27rem] bg-[#F1FBFF] rounded-[1.5625rem] pb-[2.38rem]">
+                    <div class="flex items-center justify-center w-full h-[17.63rem]">
+                        <div class="w-[13.8125rem] h-[13.8125rem] rounded-[13.8125rem]">
+                            <img class="object-contain w-full h-full" src="./img/Ellipse 35.png" alt="team">
+                        </div>
+                    </div>
+
+                    <div class=" text-center">
+                        <h3 class="text-[1.5rem] font-[600]">Jurgen Klopp</h3>
+                        <p class="text-[#8D8D8D] text-[1.125rem] my-[1.38rem]">Inventory Manager</p>
+                        <div class="flex justify-center">
+                            <ul class="list-none flex w-[7.25rem] h-[1.1875rem] justify-between">
+                                <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://www.facebook.com" target="_blank"><i
+                                            class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="https://www.indeed.com" target="_blank"><i
+                                            class="fa fa-linkedin-square"></i></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex justify-between">
+                <div class=" w-[23.875rem] h-[27rem] bg-[#F1FBFF] rounded-[1.5625rem] pb-[2.38rem]">
+                    <div class="flex items-center justify-center w-full h-[17.63rem]">
+                        <div class="w-[13.8125rem] h-[13.8125rem] rounded-[13.8125rem]">
+                            <img class="object-contain w-full h-full" src="./img/Ellipse 36.png" alt="team">
+                        </div>
+                    </div>
+
+                    <div class=" text-center">
+                        <h3 class="text-[1.5rem] font-[600]">Jonathan Joules</h3>
+                        <p class="text-[#8D8D8D] text-[1.125rem] my-[1.38rem]">Book Curator</p>
+                        <div class="flex justify-center">
+                            <ul class="list-none flex w-[7.25rem] h-[1.1875rem] justify-between">
+                                <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://www.facebook.com" target="_blank"><i
+                                            class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="https://www.indeed.com" target="_blank"><i
+                                            class="fa fa-linkedin-square"></i></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-[23.875rem] h-[27rem] bg-[#F1FBFF] rounded-[1.5625rem] pb-[2.38rem]">
+                    <div class="flex items-center justify-center w-full h-[17.63rem]">
+                        <div class="w-[13.8125rem] h-[13.8125rem] rounded-[13.8125rem]">
+                            <img class="object-contain w-full h-full" src="./img/Ellipse 34.png" alt="team">
+                        </div>
+                    </div>
+
+                    <div class=" text-center">
+                        <h3 class="text-[1.5rem] font-[600]">Nathan Ake</h3>
+                        <p class="text-[#8D8D8D] text-[1.125rem] my-[1.38rem]">Data Analyst</p>
+                        <div class="flex justify-center">
+                            <ul class="list-none flex w-[7.25rem] h-[1.1875rem] justify-between">
+                                <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://www.facebook.com" target="_blank"><i
+                                            class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="https://www.indeed.com" target="_blank"><i
+                                            class="fa fa-linkedin-square"></i></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-[23.875rem] h-[27rem] bg-[#F1FBFF] rounded-[1.5625rem] pb-[2.38rem]">
+                    <div class="flex items-center justify-center w-full h-[17.63rem]">
+                        <div class="w-[13.8125rem] h-[13.8125rem] rounded-[13.8125rem]">
+                            <img class="object-contain w-full h-full" src="./img/Ellipse 35.png" alt="team">
+                        </div>
+                    </div>
+
+                    <div class=" text-center">
+                        <h3 class="text-[1.5rem] font-[600]">Lilian Robinson</h3>
+                        <p class="text-[#8D8D8D] text-[1.125rem] my-[1.38rem]">Customer Service Representative</p>
+                        <div class="flex justify-center">
+                            <ul class="list-none flex w-[7.25rem] h-[1.1875rem] justify-between">
+                                <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://www.facebook.com" target="_blank"><i
+                                            class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="https://www.indeed.com" target="_blank"><i
+                                            class="fa fa-linkedin-square"></i></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class=" bg-[#F2FBFF] w-full h-[19.5rem] mt-[9.81rem]">
+            <ul class="flex list-none items-center justify-center h-full w-full gap-[6.81rem]">
+                <li class="flex flex-col items-center justify-center text-center">
+                    <div class="flex justify-center items-center w-[3.063rem] h-[2.75rem] bg-blue-100">
+
+                        <img class="object-contain w-full h-full" src="./img/material-symbols_bolt.png" alt="">
+                    </div>
+                    <div class="w-[12.875rem] text-center items-center ">
+                        <h3 class="font-bold text-[1.313rem]">Fast Delivery</h3>
+                        <p class="text-xs pt-2 text-[#747171]">A must read book for anyone who is exploring
+                            philosophical ideas through
+                            a
+                            comelling an</p>
+                    </div>
+
+                </li>
+                <li class=" flex flex-col text-center justify-center items-center">
+                    <div class="items-center justify-center w-[3.063rem] h-[2.75rem] bg-blue-100">
+                        <img class="object-contain w-full h-full items-center justify-center"
+                            src="./img/material-symbols_thumb-up.png" alt="">
+                    </div>
+                    <div class="w-[12.875rem] text-center items-center justify-center">
+                        <h3 class="font-bold text-[1.313rem]">Best Quality</h3>
+                        <p class="text-xs pt-2 text-[#747171]">A must read book for anyone who is exploring
+                            philosophical ideas through
+                            a comelling an</p>
+                    </div>
+
+                </li>
+                <li class="flex flex-col text-center items-center justify-center">
+                    <div class="flex w-[3.063rem] h-[2.75rem] bg-blue-100 items-center justify-center">
+                        <img class="object-contain w-full h-full justify-center items-center"
+                            src="./img/mdi_encryption-secure.png" alt="">
+                    </div>
+                    <div class="w-[12.875rem] text-center items-center justify-center">
+                        <h3 class="font-bold text-[1.313rem]">Secured Payment</h3>
+                        <p class="text-xs pt-2 text-[#747171]">A must read book for anyone who is exploring
+                            philosophical ideas through
+                            a comelling an</p>
+                    </div>
+
+                </li>
+                <li class="flex flex-col text-center items-center justify-center">
+                    <div class="w-[3.063rem] h-[2.75rem] bg-blue-100 items-center justify-center">
+                        <img class="object-contain w-full h-full" src="./img/material-symbols_star.png" alt="">
+                    </div>
+                    <div class="w-[12.875rem] text-center items-center justify-center">
+                        <h3 class="font-bold text-[1.313rem]">Best Ratings</h3>
+                        <p class="text-xs pt-2 text-[#747171]">A must read book for anyone who is exploring
+                            philosophical ideas through
+                            a comelling an</p>
+                    </div>
+
+                </li>
+            </ul>
+        </section>
+        <section class="mt-[11.62rem]">
+            <div class="flex justify-between">
+                <div class="w-[35.0625rem]">
+                    <h1 class=" text-[3.4375rem] font-bold">
+                        Committed to Give You the Best Service
+                    </h1>
+                    <p class="text-[#747171] text-[1.25rem]">
+                        We believe that reading is a powerful tool for personal growth and enrichment, and we're excited
+                        to help you discover your next favorite read. So come on in and start exploring the wealth of
+                        books and inspiration that awaits you!
+                    </p>
+                    <div class="w-full flex justify-between mt-[5.31rem]">
+                        <div class="text-center">
+                            <h1 class="text-[3.75rem] ">12000➕</h1>
+                            <p class="text-[1.25rem] text-[#747171]">Book Authors</p>
+                        </div>
+                        <div class="text-center">
+                            <h1 class="text-[3.75rem] ">20000➕</h1>
+                            <p class="text-[1.25rem] text-[#747171]">Book Readers</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-between mt-[3.25rem]">
+                        <div class="text-center">
+                            <h1 class="text-[3.75rem] ">35000➕</h1>
+                            <p class="text-[1.25rem] text-[#747171]">Book Sold</p>
+                        </div>
+                        <div class="text-center">
+                            <h1 class="text-[3.75rem] ">14000➕</h1>
+                            <p class="text-[1.25rem] text-[#747171]">Book Shares</p>
+                        </div>
+                    </div>
+                    <button
+                        class="bg-[#3FB2E5] text-white rounded-xl hover:bg-blue-400 text-[1.25rem] w-[12.3125rem] h-[3.8377rem] mt-[3.13rem]">
+                        Get Started
+                    </button>
+                </div>
+                <div class="w-[31.1875rem] h-[29.625rem] rounded-2xl liner">
+                    <img class="object-contain w-full h-full rounded-2xl" src="./img/IMG-1109 1.png" alt="girl-image">
+                </div>
+            </div>
+        </section>
+        <section id="newsletter" class="mt-[12.91rem]"
+            style="
+    background-image: url(./img/abstract-blue-light-background_SvZPryOnfl_thumb.jpg); height:19.5rem; background-size: cover; background-repeat:no-repeat;"
+            class="w-full h-[19.5rem]">
+
+            <div class="flex items-center h-full px-[7.44rem] space-x-[5.81rem]">
+                <div class=" w-[37.0625rem]">
+                    <h3 class="text-[2.3125rem] text-[#FAF8F8] ">
+                        Subscribe to our Newsletter for the latest books and updates
+                    </h3>
+                </div>
+                <div class="w-[32.3125rem] flex">
+                    <input type="text" class=""
+                        style="width:21.25rem; padding-top:1.25rem; padding-bottom:1.25rem; padding-left:2.38rem; border:1px solid; background-color:transparent; color:#FAF8F8; border-radius:10px 0px 0px 10px;"
+                        placeholder="Your Email Address" /> <button
+                        class="bg-[#3FB2E5] w-[11.0625rem] h-[5.3125rem] text-[#FAF8F8] text-[1.375rem]">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <section id="Book_Categories" class="mt-[5.38rem] mb-[6.5rem]">
+
+            <h3 class="mb-[2.56rem] font-bold text-[1.625rem]">Book Categories</h3>
+            <ul class="list-none flex justify-between">
+                <li class=" lg:w-1/5">
+                    <div class="flex flex-col pb-3">
+                        <ul class="list-none">
+                            <li class="p-2 text-xs">Architecture</li>
+                            <li class="p-2 text-xs">Love and Romance</li>
+                            <li class="p-2 text-xs">Science and Technology</li>
+                            <li class="p-2 text-xs">Young Adult</li>
+                            <li class="p-2 text-xs">Science Fiction</li>
+                            <li class="p-2 text-xs">Children Literature</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="lg:w-1/5">
+                    <div class="flex flex-col pb-3">
+                        <ul class="list-none">
+                            <li class="p-2 text-xs">Bio & Autobiography</li>
+                            <li class="p-2 text-xs">Craft and Hobbies</li>
+                            <li class="p-2 text-xs">Family and Relationship</li>
+                            <li class="p-2 text-xs">Horror</li>
+                            <li class="p-2 text-xs">Comedy</li>
+                            <li class="p-2 text-xs">Tradition and Culture</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="lg:w-1/5">
+                    <div class="flex flex-col pb-3">
+                        <ul class="list-none">
+                            <li class="p-2 text-xs">Mathematics</li>
+                            <li class="p-2 text-xs">Action</li>
+                            <li class="p-2 text-xs">Thriller</li>
+                            <li class="p-2 text-xs">Sex</li>
+                            <li class="p-2 text-xs">Non Fiction</li>
+                            <li class="p-2 text-xs">World History</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="lg:w-1/5">
+                    <div class="flex flex-col pb-3">
+                        <ul class="list-none">
+                            <li class="p-2 text-xs">Architecture</li>
+                            <li class="p-2 text-xs">Education</li>
+                            <li class="p-2 text-xs">Drama</li>
+                            <li class="p-2 text-xs">Music</li>
+                            <li class="p-2 text-xs">Politics</li>
+                            <li class="p-2 text-xs">Religion</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="lg:w-1/5">
+                    <div class="flex flex-col pb-3">
+                        <ul class="list-none">
+                            <li class="p-2 text-xs">Medical</li>
+                            <li class="p-2 text-xs">Nature</li>
+                            <li class="p-2 text-xs">Anime</li>
+                            <li class="p-2 text-xs">Racism</li>
+                            <li class="p-2 text-xs">War</li>
+                            <li class="p-2 text-xs text-blue-400">
+                                <a href="#">See More</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <hr />
+        <section id="Footer" class="mt-[8.25rem]">
+            <div class="flex justify-between">
+                <article class="w-[29rem] h-[6.25rem]">
+                    <div class="w-[6.4375rem] h-[2.6875rem]">
+                        <img class="object-contain w-full h-full items-center justify-center" src="./img/Bookzz.png"
+                            alt="logo" />
+                    </div>
+
+                    <p class="text-xs my-4">
+                        A must read book for anyone who is exploring philosophical ideas
+                        through a comelling and engaging story and interested in exploring
+                        themes such as cultural indifference interested in exploring
+                        themes
+                    </p>
+                </article>
+                <div class="w-2/6 text-xs m-auto justify-self-start">
+                    <h3 class="my-3 font-bold">Get in Touch Us</h3>
+                    <p class="my-3">📍 1 Ogunlesi street, Onipanu, lagos</p>
+                    <p class="my-3">📞 +234 814 6745 450</p>
+                    <p>✉️ support@bookers.com</p>
+                </div>
+                <div class="w-[15.8125rem] h-[9.9375rem] text-xs p-2">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.9150507639283!2d-0.24477712267617585!3d51.752876921870374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48763c63ec456853%3A0x914d13f91468d5da!2sHatfield%20AL10%209AB!5e0!3m2!1sen!2suk!4v1700744189740!5m2!1sen!2suk"
+                        style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <p class="text-center text-xs">&copy Christopher</p>
+        </section>
+
+    </main>
 </body>
 
 </html>

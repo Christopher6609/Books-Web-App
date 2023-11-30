@@ -22,3 +22,7 @@ body {
 .linergreen {
     border: 1px solid green;
 }
+
+.linerblack {
+    border: 1px solid black;
+}
