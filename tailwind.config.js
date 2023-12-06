@@ -20,6 +20,9 @@ module.exports = {
     fontFamily: {
       merriweather: ['Merriweather']
     },
+    fontFamily: {
+      merienda: ['Merienda']
+    },
 
     fontFamily: {
       sourcesans: ['Source Sans 3']
