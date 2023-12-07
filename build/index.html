@@ -32,7 +32,7 @@
     </header>
     <main class="w-full sm:pt-[7.59rem] pt-[2.56rem] pb-[6.59rem] sm:px-[7.25rem] px-[1.56rem]">
         <section id="intro"
-            class="sm:flex sm:justify-between sm:items-center sm:gap-[2.88rem] scroll-mt-20 w-full mb-[3.66rem] sm:mb-[6.09rem]">
+            class="sm:flex sm:justify-between sm:items-center sm:gap-[2.88rem] scroll-mt-20 w-full mb-[3.66rem] sm:mb-[6.09rem] ">
             <article class="max-w-[36.8125rem]">
                 <h1
                     class="text-[#3B3C3D] max-w-[35.9375rem] sm:leading-[5.125rem] leading-[2.8125rem] font-manrope font-[800] text-[2.1874rem] sm:text-[3.875rem] sm:text-left text-center dark:text-white font-manrope mb-4">
@@ -52,7 +52,7 @@
                     </button>
                 </div>
             </article>
-            <div class="sm:h-[21.81106rem] sm:w-[35.3125rem] sm:mt-[5.37rem] mt-[5.06rem]">
+            <div class="sm:h-[21.81106rem] sm:w-[35.3125rem] sm:mt-0 mt-[5.06rem]">
                 <img class="w-full h-full object-contain" src="./img/5883085-removebg-preview_auto_x2 1.png"
                     alt="read-image" />
             </div>
@@ -789,123 +789,143 @@
             </div>
         </section>
 
-        <section id="newsletter" class="mb-[8.44rem]"
+        <section id="newsletter" class="mb-[8.44rem] py-4 sm:h-[19.5rem]"
             style="
-        background-image: url(./img/abstract-blue-light-background_SvZPryOnfl_thumb.jpg); height:19.5rem; background-size: cover; background-repeat:no-repeat;"
-            class="w-full h-[19.5rem]">
+        background-image: url(./img/abstract-blue-light-background_SvZPryOnfl_thumb.jpg);  background-size: cover; background-repeat:no-repeat;" class="w-full h-[19.5rem]">
 
-            <div class="flex justify-between items-center h-full px-[7.44rem] space-x-[5.81rem]">
-                <div class=" sm:w-[37.0625rem]">
-                    <h3 class="text-[2.3125rem] text-[#FAF8F8] font-manrope">
+            <div
+                class="flex sm:flex-row flex-col h-full justify-center space-y-[0.87rem] items-center sm:px-[7.44rem] sm:space-x-[5.81rem]">
+                <div class=" sm:w-[37.0625rem] w-[16.375rem] sm:text-start text-center">
+                    <h3
+                        class="sm:text-[2.3125rem] text-[1rem] font-[600] sm:leading-[3.4375rem] leading-5 text-[#FAF8F8] font-manrope">
                         Subscribe to our Newsletter for the latest books and updates
                     </h3>
                 </div>
-                <div class="sm:w-[32.3125rem] flex">
-                    <input type="text" class=""
-                        style="width:21.25rem; padding-top:1.25rem; padding-bottom:1.25rem; padding-left:2.38rem; border:1px solid; background-color:transparent; color:#FAF8F8; border-radius:10px 0px 0px 10px;"
-                        placeholder="Your Email Address" /> <button
-                        class="bg-[#3FB2E5] w-[11.0625rem] h-[5.3125rem] text-[#FAF8F8] text-[1.375rem] font-manrope">Subscribe</button>
+                <div class="sm:w-[32.3125rem] w-[16.5625rem] flex">
+                    <input type="text"
+                        class="sm:w-[21.25rem] w-[10.875rem] sm:pl-[2.38rem] pl-[0.94rem] sm:py-[1.25rem] py-[0.5rem]"
+                        style=" border:1px solid; background-color:transparent; color:#FAF8F8; border-radius:10px 0px 0px 10px;"
+                        placeholder="Your Email Address" />
+                    <button
+                        class="bg-[#3FB2E5] sm:w-[11.0625rem] w-[5.6875rem] p-[0.625rem] sm:h-[5.3125rem] text-[#FAF8F8] text-[0.75rem] leading-[3.125rem] font-[700] sm:text-[1.375rem] font-manrope rounded-tr-[0.5625rem] rounded-br-[0.5625rem]">Subscribe</button>
                 </div>
             </div>
         </section>
-        <section id="Book_Categories" class="mb-[6.5rem] h-[15.3125rem]">
+        <section id="Book_Categories" class="sm:mb-[6.5rem] mb-[4rem] sm:h-[15.3125rem]">
 
-            <h3 class="mb-[2.56rem] font-bold text-[1.625rem]">Book Categories</h3>
-            <ul class="list-none flex justify-between">
-                <li class=" lg:w-1/5">
-                    <div class="flex flex-col pb-3">
-                        <ul class="list-none">
-                            <li class="p-2 text-xs">Architecture</li>
-                            <li class="p-2 text-xs">Love and Romance</li>
-                            <li class="p-2 text-xs">Science and Technology</li>
-                            <li class="p-2 text-xs">Young Adult</li>
-                            <li class="p-2 text-xs">Science Fiction</li>
-                            <li class="p-2 text-xs">Children Literature</li>
-                        </ul>
+            <h3
+                class="sm:mb-[2.56rem] mb-[1.5rem] font-[600] sm:text-[1.625rem] text-[1rem] leading-[1.5625rem] sm:text-start text-center">
+                Book
+                Categories</h3>
+
+            <div class="w-full">
+                <ul class="sm:flex list-none sm:justify-between">
+                    <div class="sm:w-2/6 w-full sm:flex flex flex-row justify-between">
+                        <li class="flex">
+                            <ul class="">
+                                <li class="p-2 text-xs sm:text-[1rem]">Architecture</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Love and Romance</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Science and Technology</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Young Adult</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Science Fiction</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Children Literature</li>
+                            </ul>
+
+                        </li>
+                        <li class="flex">
+                            <ul class="list-none">
+                                <li class="p-2 text-xs sm:text-[1rem]">Bio & Autobiography</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Craft and Hobbies</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Family and Relationship</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Horror</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Comedy</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Tradition and Culture</li>
+                            </ul>
+                        </li>
                     </div>
-                </li>
-                <li class="lg:w-1/5">
-                    <div class="flex flex-col pb-3">
-                        <ul class="list-none">
-                            <li class="p-2 text-xs">Bio & Autobiography</li>
-                            <li class="p-2 text-xs">Craft and Hobbies</li>
-                            <li class="p-2 text-xs">Family and Relationship</li>
-                            <li class="p-2 text-xs">Horror</li>
-                            <li class="p-2 text-xs">Comedy</li>
-                            <li class="p-2 text-xs">Tradition and Culture</li>
-                        </ul>
+                    <div class="sm:w-3/6 w-full sm:flex flex flex-row justify-between sm:mt-0 mt-[3.38rem]">
+                        <li>
+                            <ul class="list-none">
+                                <li class="p-2 text-xs sm:text-[1rem]">Mathematics</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Action</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Thriller</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Sex</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Non Fiction</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">World History</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-none">
+                                <li class="p-2 text-xs sm:text-[1rem]">Architecture</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Education</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Drama</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Music</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Politics</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Religion</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-none">
+                                <li class="p-2 text-xs sm:text-[1rem]">Medical</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Nature</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Anime</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">Racism</li>
+                                <li class="p-2 text-xs sm:text-[1rem]">War</li>
+                                <li class="p-2 text-xs sm:text-[1rem] text-blue-400">
+                                    <a href="#">See More</a>
+                                </li>
+                            </ul>
+                        </li>
                     </div>
-                </li>
-                <li class="lg:w-1/5">
-                    <div class="flex flex-col pb-3">
-                        <ul class="list-none">
-                            <li class="p-2 text-xs">Mathematics</li>
-                            <li class="p-2 text-xs">Action</li>
-                            <li class="p-2 text-xs">Thriller</li>
-                            <li class="p-2 text-xs">Sex</li>
-                            <li class="p-2 text-xs">Non Fiction</li>
-                            <li class="p-2 text-xs">World History</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="lg:w-1/5">
-                    <div class="flex flex-col pb-3">
-                        <ul class="list-none">
-                            <li class="p-2 text-xs">Architecture</li>
-                            <li class="p-2 text-xs">Education</li>
-                            <li class="p-2 text-xs">Drama</li>
-                            <li class="p-2 text-xs">Music</li>
-                            <li class="p-2 text-xs">Politics</li>
-                            <li class="p-2 text-xs">Religion</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="lg:w-1/5">
-                    <div class="flex flex-col pb-3">
-                        <ul class="list-none">
-                            <li class="p-2 text-xs">Medical</li>
-                            <li class="p-2 text-xs">Nature</li>
-                            <li class="p-2 text-xs">Anime</li>
-                            <li class="p-2 text-xs">Racism</li>
-                            <li class="p-2 text-xs">War</li>
-                            <li class="p-2 text-xs text-blue-400">
-                                <a href="#">See More</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+                </ul>
+            </div>
+
         </section>
         <hr />
-        <section id="Footer" class="mt-[8.25rem]">
-            <div class="flex justify-between">
-                <article class="w-[29rem] h-[6.25rem]">
+        <section id="Footer" class="sm:mt-[8.25rem] mt-[4.56rem]">
+            <div class="sm:flex sm:justify-between">
+                <article class="sm:w-[29rem] sm:h-[6.25rem] mb-[2.06rem] sm:mb-0">
                     <div class="w-[6.4375rem] h-[2.6875rem]">
                         <img class="object-contain w-full h-full items-center justify-center" src="./img/Bookzz.png"
                             alt="logo" />
                     </div>
 
-                    <p class="text-[1rem] font-manrope text-[#827F7F] my-4">
+                    <p
+                        class="sm:text-[1rem] text-[0.75rem] leading-[1.25rem] font-[600] font-manrope text-[#827F7F] my-4">
                         A must read book for anyone who is exploring philosophical ideas
                         through a comelling and engaging story and interested in exploring
                         themes such as cultural indifference interested in exploring
                         themes
                     </p>
                 </article>
-                <div class="w-2/6 text-xs m-auto justify-self-start">
-                    <h3 class="my-3 font-bold font-manrope">Get in Touch Us</h3>
-                    <p class="my-3 text-[1rem] font-manrope text-[#827F7F]">📍 1 Ogunlesi street, Onipanu, lagos</p>
-                    <p class="my-3 text-[1rem] font-manrope text-[#827F7F]">📞 +234 814 6745 450</p>
-                    <p class="text-[1rem] font-manrope text-[#827F7F]">✉️ support@bookers.com</p>
+
+                <div class=" justify-self-start">
+                    <h3 class=" font-[700] leading-[3.125rem] text-[1.5rem] font-manrope">Get in Touch Us</h3>
+                    <div class="sm:space-y-[1.38rem] space-y-[0.56rem]">
+                        <p
+                            class="sm:text-[1rem] text-[0.75rem] font-[600] leading-[1.5625rem] font-manrope text-[#827F7F]">
+                            📍 1 Ogunlesi street, Onipanu, lagos</p>
+                        <p
+                            class="sm:text-[1rem] text-[0.75rem] font-[600] leading-[1.5625rem] font-manrope text-[#827F7F]">
+                            📞 +234 814 6745 450</p>
+                        <p
+                            class="sm:text-[1rem] text-[0.75rem] font-[600] leading-[1.5625rem] font-manrope text-[#827F7F]">
+                            ✉️ support@bookers.com</p>
+                    </div>
                 </div>
-                <div class="w-[15.8125rem] h-[9.9375rem] text-xs p-2">
+
+                <div class="sm:w-[15.8125rem] w-full h-[9.9375rem] mt-[3.25rem] sm:mt-0 flex justify-center">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.9150507639283!2d-0.24477712267617585!3d51.752876921870374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48763c63ec456853%3A0x914d13f91468d5da!2sHatfield%20AL10%209AB!5e0!3m2!1sen!2suk!4v1700744189740!5m2!1sen!2suk"
                         style="border: 0" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <p class="text-center text-xs">&copy Christopher</p>
+            <div class="mt-8 text-center">
+                <a href="https://github.com/Christopher6609" target="_blank" class="text-[1rem]"> &copy
+                    Christopher</a>
+            </div>
+
         </section>
     </main>
 </body>
