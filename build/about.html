@@ -12,24 +12,42 @@
 
 <body class="dark:bg-black dark:text-white">
     <header
-        class="bg-slate-300 top-0 z-10 shadow-nav sticky py-4 px-4 sm:px-[7.25rem] flex justify-between items-center">
+        class="bg-slate-300 dark:bg-slate-400 top-0 z-10 shadow-nav sticky py-4 px-4 sm:px-[7.25rem] flex justify-between items-center">
         <div class="sm:w-[7.625rem] sm:h-[3.1875rem]">
             <a href="./index.html"><img class="object-contain w-full h-full" src="./img/Bookzz.png" alt="logo"></a>
         </div>
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center sm:gap-[4.44rem]">
+
+
+            <nav class="space-x-8 text-xl " aria-label="main">
+                <div
+                    class="sm:static absolute sm:min-h-fit min-h-[20rem] w-full left-0 top-[-20rem] text-black flex items-center px-5 ">
+                    <ul
+                        class="list-none flex sm:flex-row flex-col justify-center sm:items-center sm:gap-[2.5rem] gap-[4rem]">
+                        <li> <a href="index.html" class="hover:opacity-50 font-[merriweather] text-[1.25rem]">Home</a>
+                        </li>
+                        <li><a href="./about.html" class="hover:opacity-50 font-[merriweather] text-[1.25rem]">About
+                                Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </nav>
+            <button
+                class="bg-[#3FB2E5] font-[merriweather] hidden sm:block text-white text-[1.25rem] rounded-xl hover:bg-blue-400 mx-auto px-6 py-4">
+                Get Started
+            </button>
             <button id="mobile-open-button"
-                class="text-5xl text-[#292D32] sm:hidden focus:outline-none object-contain w-full h-full">
+                class="text-5xl text-[#292D32] sm:hidden focus:outline-none object-contain w-full h-full cursor-pointer">
                 &#9776;
             </button>
-
-            <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
-                <a href="index.html" class="hover:opacity-50 font-merriweather text-[1.25rem]">Home</a>
-                <a href="./about.html" class="hover:opacity-50 font-merriweather text-[1.25rem]">About Us</a>
-                <button
-                    class="bg-[#3FB2E5] font-merriweather text-white text-[1.25rem] rounded-xl hover:bg-blue-400 mx-auto px-6 py-4">
-                    Get Started
-                </button>
-            </nav>
+            <!-- <button id="mobile-close-button"
+                class="text-5xl text-[#292D32] sm:hidden focus:outline-none object-contain w-full h-full cursor-pointer"
+                onclick="onToggleMenu(this)">
+                &#10006;
+            </button> -->
         </div>
     </header>
     <main class="w-full sm:pt-[5.59rem] pt-[2.56rem] pb-[6.59rem] sm:px-[7.25rem] px-[1.56rem]">
@@ -37,11 +55,11 @@
             class="sm:flex sm:justify-between sm:items-center sm:gap-[2.88rem] scroll-mt-20 w-full mb-[3.66rem] sm:mb-[6.09rem]">
             <article class="max-w-[36.8125rem]">
                 <h1
-                    class="text-[#3B3C3D] max-w-[35.9375rem] sm:leading-normal leading-[2.8125rem] font-manrope font-[800] text-[2.1874rem] sm:text-[3.875rem] sm:text-left text-center dark:text-white font-manrope mb-4">
+                    class="text-[#3B3C3D] max-w-[35.9375rem] sm:leading-normal leading-[2.8125rem] font-[800] text-[2.1874rem] sm:text-[3.875rem] sm:text-left text-center dark:text-white font-[manrope] mb-4">
                     The Bookers - A Passionate Community of Book Lovers
                 </h1>
                 <p
-                    class="w-full sm:text-2xl text-[#747171] font-[600] sm:leading-[2.0625rem] leading-[1.3125rem] text-[0.8125rem] sm:text-[1.25rem] font-manrope  sm:text-start text-center dark:text-white ">
+                    class="w-full sm:text-2xl text-[#747171] font-[600] sm:leading-[2.0625rem] leading-[1.3125rem] text-[0.8125rem] sm:text-[1.25rem] font-[manrope]  sm:text-start text-center dark:text-white ">
                     We believe that reading is a powerful tool for personal growth and
                     enrichment, and we're excited to help you discover your next
                     favorite read. So come on in and start exploring the wealth of books
@@ -57,10 +75,10 @@
 
         <section class=" flex sm:mt-[8.13rem] mt-[4.44rem] justify-center">
             <div class=" w-[57.9375rem] text-center">
-                <h1 class=" font-[800] text-[1.875rem] sm:text-[3.125rem] font-manrope text-center mb-1">Our Mission
+                <h1 class=" font-[800] text-[1.875rem] sm:text-[3.125rem] font-[manrope] text-center mb-1">Our Mission
                 </h1>
                 <p
-                    class=" text-[#747171] text-[0.875rem] font-[600] sm:leading-[2.0625rem] leading-5 sm:text-[1.25rem] text-center dark:text-white font-manrope">
+                    class=" text-[#747171] text-[0.875rem] font-[600] sm:leading-[2.0625rem] leading-5 sm:text-[1.25rem] text-center dark:text-white font-[manrope]">
                     We believe that reading is a powerful tool for personal growth and enrichment, and we're excited to
                     help you discover your next favorite read. So come on in and start exploring the wealth of books and
                     inspiration that awaits you!
@@ -77,11 +95,11 @@
 
             <article class="sm:w-[37.8125rem] mt-[5.56rem] sm:mt-0 w-full">
                 <h1
-                    class="font-[800] text-[1.875rem] sm:text-start text-center sm:text-[3.125rem] sm:leading-[4.0625rem] leading-[2.6875rem] font-manrope dark:text-white w-full">
+                    class="font-[800] text-[1.875rem] sm:text-start text-center sm:text-[3.125rem] sm:leading-[4.0625rem] leading-[2.6875rem] font-[manrope] dark:text-white w-full">
                     Why Choose The Bookers
                 </h1>
                 <p
-                    class="w-full sm:text-[1.25rem] text-[0.825rem] font-manrope text-[#747171] sm:text-start text-center leading-5 sm:leading-[2.0625rem] mt-[1.06rem] font-[600] dark:text-white">
+                    class="w-full sm:text-[1.25rem] text-[0.825rem] font-[manrope] text-[#747171] sm:text-start text-center leading-5 sm:leading-[2.0625rem] mt-[1.06rem] font-[600] dark:text-white">
                     We believe that reading is a powerful tool for personal growth and
                     enrichment, and we're excited to help you discover your next
                     favorite read. So come on in and start exploring the wealth of books
@@ -89,7 +107,7 @@
                 </p>
                 <div class="sm:mt-[0.82rem] flex justify-center sm:justify-start mt-[1.44rem]">
                     <button
-                        class="bg-[#3FB2E5] font-merriweather text-white rounded-xl hover:bg-blue-400  sm:w-[12.3125rem] w-full  sm:h-[3.83772rem] h-10 px-[0.62rem] py-[0.44rem]">
+                        class="bg-[#3FB2E5] font-[merriweather] text-white rounded-xl hover:bg-blue-400  sm:w-[12.3125rem] w-full  sm:h-[3.83772rem] h-10 px-[0.62rem] py-[0.44rem]">
                         Get Started
                     </button>
                 </div>
@@ -99,11 +117,11 @@
             <div class=" flex justify-center mb-[5.19rem]">
                 <div class="w-[39.75rem] text-center">
                     <h1
-                        class="sm:text-[3.4375rem] text-[1.875rem] leading-normal font-[800] sm:mb-[1.5rem] mb-[1rem] font-manrope">
+                        class="sm:text-[3.4375rem] text-[1.875rem] leading-normal font-[800] sm:mb-[1.5rem] mb-[1rem] font-[manrope]">
                         Meet Our People
                     </h1>
                     <p
-                        class="text-[#747171] sm:text-[1.25rem] text-[0.875rem] font-[600] sm:leading-[2.0625rem] leading-5 font-manrope">
+                        class="text-[#747171] sm:text-[1.25rem] text-[0.875rem] font-[600] sm:leading-[2.0625rem] leading-5 font-[manrope]">
                         We believe that reading is a powerful tool for personal growth and enrichment, and we're excited
                         to
                         help you
@@ -121,10 +139,10 @@
                         </div>
                         <div class="text-center mt-[0.33rem] sm:mt-[1.69rem] ">
                             <h3
-                                class="sm:text-[1.5rem] text-[#3B3C3D] text-[0.675rem] leading-[1.5625rem] sm:tracking-[0.045rem] tracking-[0.02625rem] font-[600] font-sourcesans">
+                                class="sm:text-[1.5rem] text-[#3B3C3D] text-[0.675rem] leading-[1.5625rem] sm:tracking-[0.045rem] tracking-[0.02625rem] font-[600] font-[sourcesans]">
                                 Declan Rice</h3>
                             <p
-                                class="text-[#8D8D8D] sm:text-[1.125rem] text-[0.525rem] sm:my-[1.38rem] leading-[1.5625rem] tracking-[0.01875rem] sm:tracking-[0.03375rem] font-[500] font-sourcesans">
+                                class="text-[#8D8D8D] sm:text-[1.125rem] text-[0.525rem] sm:my-[1.38rem] leading-[1.5625rem] tracking-[0.01875rem] sm:tracking-[0.03375rem] font-[500] font-[sourcesans]">
                                 CEO/Founder</p>
                             <div class="flex">
                                 <ul
@@ -152,10 +170,10 @@
                         </div>
                         <div class="text-center mt-[0.33rem] sm:mt-[1.69rem] ">
                             <h3
-                                class="sm:text-[1.5rem] text-[#3B3C3D] text-[0.675rem] leading-[1.5625rem] sm:tracking-[0.045rem] tracking-[0.02625rem] font-[600] font-sourcesans">
+                                class="sm:text-[1.5rem] text-[#3B3C3D] text-[0.675rem] leading-[1.5625rem] sm:tracking-[0.045rem] tracking-[0.02625rem] font-[600] font-[sourcesans]">
                                 Maryam Atkinson</h3>
                             <p
-                                class="text-[#8D8D8D] sm:text-[1.125rem] text-[0.525rem] sm:my-[1.38rem] leading-[1.5625rem] tracking-[0.01875rem] sm:tracking-[0.03375rem] font-[500] font-sourcesans">
+                                class="text-[#8D8D8D] sm:text-[1.125rem] text-[0.525rem] sm:my-[1.38rem] leading-[1.5625rem] tracking-[0.01875rem] sm:tracking-[0.03375rem] font-[500] font-[sourcesans]">
                                 Sales and Marketing</p>
                             <div class="flex justify-center">
                                 <ul
@@ -188,10 +206,10 @@
                         </div>
                         <div class="text-center mt-[0.33rem] sm:mt-[1.69rem] ">
                             <h3
-                                class="sm:text-[1.5rem] text-[#3B3C3D] text-[0.675rem] leading-[1.5625rem] sm:tracking-[0.045rem] tracking-[0.02625rem] font-[600] font-sourcesans">
+                                class="sm:text-[1.5rem] text-[#3B3C3D] text-[0.675rem] leading-[1.5625rem] sm:tracking-[0.045rem] tracking-[0.02625rem] font-[600] font-[sourcesans]">
                                 Jurgen Klopp</h3>
                             <p
-                                class="text-[#8D8D8D] sm:text-[1.125rem] text-[0.525rem] sm:my-[1.38rem] leading-[1.5625rem] tracking-[0.01875rem] sm:tracking-[0.03375rem] font-[500] font-sourcesans">
+                                class="text-[#8D8D8D] sm:text-[1.125rem] text-[0.525rem] sm:my-[1.38rem] leading-[1.5625rem] tracking-[0.01875rem] sm:tracking-[0.03375rem] font-[500] font-[sourcesans]">
                                 Inventory Manager</p>
                             <div class="flex">
                                 <ul
@@ -219,10 +237,10 @@
                         </div>
                         <div class="text-center mt-[0.33rem] sm:mt-[1.69rem] ">
                             <h3
-                                class="sm:text-[1.5rem] text-[#3B3C3D] text-[0.675rem] leading-[1.5625rem] sm:tracking-[0.045rem] tracking-[0.02625rem] font-[600] font-sourcesans">
+                                class="sm:text-[1.5rem] text-[#3B3C3D] text-[0.675rem] leading-[1.5625rem] sm:tracking-[0.045rem] tracking-[0.02625rem] font-[600] font-[sourcesans]">
                                 Jonathan Joules</h3>
                             <p
-                                class="text-[#8D8D8D] sm:text-[1.125rem] text-[0.525rem] sm:my-[1.38rem] leading-[1.5625rem] tracking-[0.01875rem] sm:tracking-[0.03375rem] font-[500] font-sourcesans">
+                                class="text-[#8D8D8D] sm:text-[1.125rem] text-[0.525rem] sm:my-[1.38rem] leading-[1.5625rem] tracking-[0.01875rem] sm:tracking-[0.03375rem] font-[500] font-[sourcesans]">
                                 Book Curator</p>
                             <div class="flex justify-center">
                                 <ul
@@ -255,10 +273,10 @@
                         </div>
                         <div class="text-center mt-[0.33rem] sm:mt-[1.69rem] ">
                             <h3
-                                class="sm:text-[1.5rem] text-[#3B3C3D] text-[0.675rem] leading-[1.5625rem] sm:tracking-[0.045rem] tracking-[0.02625rem] font-[600] font-sourcesans">
+                                class="sm:text-[1.5rem] text-[#3B3C3D] text-[0.675rem] leading-[1.5625rem] sm:tracking-[0.045rem] tracking-[0.02625rem] font-[600] font-[sourcesans]">
                                 Nathan ake</h3>
                             <p
-                                class="text-[#8D8D8D] sm:text-[1.125rem] text-[0.525rem] sm:my-[1.38rem] leading-[1.5625rem] tracking-[0.01875rem] sm:tracking-[0.03375rem] font-[500] font-sourcesans">
+                                class="text-[#8D8D8D] sm:text-[1.125rem] text-[0.525rem] sm:my-[1.38rem] leading-[1.5625rem] tracking-[0.01875rem] sm:tracking-[0.03375rem] font-[500] font-[sourcesans]">
                                 Data Analyst</p>
                             <div class="flex">
                                 <ul
@@ -286,10 +304,10 @@
                         </div>
                         <div class="text-center mt-[0.33rem] sm:mt-[1.69rem] ">
                             <h3
-                                class="sm:text-[1.5rem] text-[#3B3C3D] text-[0.675rem] leading-[1.5625rem] sm:tracking-[0.045rem] tracking-[0.02625rem] font-[600] font-sourcesans">
+                                class="sm:text-[1.5rem] text-[#3B3C3D] text-[0.675rem] leading-[1.5625rem] sm:tracking-[0.045rem] tracking-[0.02625rem] font-[600] font-[sourcesans]">
                                 Lilian Robinson</h3>
                             <p
-                                class="text-[#8D8D8D] sm:text-[1.125rem] text-[0.525rem] sm:my-[1.38rem] leading-[1.5625rem] tracking-[0.01875rem] sm:tracking-[0.03375rem] font-[500] font-sourcesans">
+                                class="text-[#8D8D8D] sm:text-[1.125rem] text-[0.525rem] sm:my-[1.38rem] leading-[1.5625rem] tracking-[0.01875rem] sm:tracking-[0.03375rem] font-[500] font-[sourcesans]">
                                 Customer Service Rep</p>
                             <div class="flex justify-center">
                                 <ul
@@ -327,11 +345,11 @@
                         </div>
                         <div class="sm:w-[12.875rem] text-center items-center mt-[0.63rem]">
                             <h3
-                                class=" font-manrope sm:text-[1.325rem] text-[0.875rem] dark:text-white text-[#3B3C3D] leading-[1.875rem] font-[700]">
+                                class=" font-[manrope] sm:text-[1.325rem] text-[0.875rem] dark:text-white text-[#3B3C3D] leading-[1.875rem] font-[700]">
                                 Fast
                                 Delivery</h3>
                             <p
-                                class="sm:text-[0.875rem] text-[0.4375rem] font-manrope pt-2 dark:text-white text-[#747171] sm:leading-[1.0625rem] leading-[0.625rem] font-[600]">
+                                class="sm:text-[0.875rem] text-[0.4375rem] font-[manrope] pt-2 dark:text-white text-[#747171] sm:leading-[1.0625rem] leading-[0.625rem] font-[600]">
                                 A
                                 must read book for anyone who
                                 is
@@ -349,10 +367,10 @@
                         </div>
                         <div class="sm:w-[12.875rem] text-center items-center mt-[0.63rem]">
                             <h3
-                                class=" font-manrope sm:text-[1.325rem] text-[0.875rem] dark:text-white text-[#3B3C3D] leading-[1.875rem] font-[700]">
+                                class=" font-[manrope] sm:text-[1.325rem] text-[0.875rem] dark:text-white text-[#3B3C3D] leading-[1.875rem] font-[700]">
                                 Best Quality</h3>
                             <p
-                                class="sm:text-[0.875rem] text-[0.4375rem] font-manrope pt-2 dark:text-white text-[#747171] sm:leading-[1.0625rem] leading-[0.625rem] font-[600]">
+                                class="sm:text-[0.875rem] text-[0.4375rem] font-[manrope] pt-2 dark:text-white text-[#747171] sm:leading-[1.0625rem] leading-[0.625rem] font-[600]">
                                 A
                                 must read book for anyone who
                                 is
@@ -372,11 +390,11 @@
                         </div>
                         <div class="sm:w-[12.875rem] text-center items-center mt-[0.63rem]">
                             <h3
-                                class=" font-manrope sm:text-[1.325rem] text-[0.875rem] dark:text-white text-[#3B3C3D] leading-[1.875rem] font-[700]">
+                                class=" font-[manrope] sm:text-[1.325rem] text-[0.875rem] dark:text-white text-[#3B3C3D] leading-[1.875rem] font-[700]">
                                 Secured Payment
                             </h3>
                             <p
-                                class="sm:text-[0.875rem] text-[0.4375rem] font-manrope pt-2 dark:text-white text-[#747171] sm:leading-[1.0625rem] leading-[0.625rem] font-[600]">
+                                class="sm:text-[0.875rem] text-[0.4375rem] font-[manrope] pt-2 dark:text-white text-[#747171] sm:leading-[1.0625rem] leading-[0.625rem] font-[600]">
                                 A
                                 must read book for anyone who
                                 is
@@ -394,10 +412,10 @@
                         </div>
                         <div class="sm:w-[12.875rem] text-center items-center mt-[0.63rem]">
                             <h3
-                                class=" font-manrope sm:text-[1.325rem] text-[0.875rem] dark:text-white text-[#3B3C3D] leading-[1.875rem] font-[700]">
+                                class=" font-[manrope] sm:text-[1.325rem] text-[0.875rem] dark:text-white text-[#3B3C3D] leading-[1.875rem] font-[700]">
                                 Best Ratings</h3>
                             <p
-                                class="sm:text-[0.875rem] text-[0.4375rem] font-manrope pt-2 dark:text-white text-[#747171] sm:leading-[1.0625rem] leading-[0.625rem] font-[600]">
+                                class="sm:text-[0.875rem] text-[0.4375rem] font-[manrope] pt-2 dark:text-white text-[#747171] sm:leading-[1.0625rem] leading-[0.625rem] font-[600]">
                                 A
                                 must read book for anyone who
                                 is
@@ -418,11 +436,11 @@
         <section class="sm:mt-[11.62rem] mt-[4.94rem]">
             <div class="flex sm:flex-row justify-between flex-col">
                 <div class="sm:w-[35.0625rem] w-full">
-                    <h1 class="  font-[800] text-[1.875rem] sm:text-[3.125rem] font-manrope text-center mb-1">
+                    <h1 class="  font-[800] text-[1.875rem] sm:text-[3.125rem] font-[manrope] text-center mb-1">
                         Committed to Give You the Best Service
                     </h1>
                     <p
-                        class="text-[#747171] text-[0.875rem] font-[600] sm:leading-[2.0625rem] leading-5 sm:text-[1.25rem] text-center dark:text-white font-manrope mt-[0.88rem]">
+                        class="text-[#747171] text-[0.875rem] font-[600] sm:leading-[2.0625rem] leading-5 sm:text-[1.25rem] text-center dark:text-white font-[manrope] mt-[0.88rem]">
                         We believe that reading is a powerful tool for personal growth and enrichment, and we're excited
                         to help you discover your next favorite read. So come on in and start exploring the wealth of
                         books and inspiration that awaits you!
@@ -430,7 +448,7 @@
                     <div class="w-full flex justify-between mt-[5.31rem]">
                         <div class="items-center">
                             <h1
-                                class="sm:text-[3.75rem] text-[2.1875rem] font-[600] leading-[3.75rem] sm:tracking-[0.1125rem] tracking-[0.06563rem] font-sourcesans">
+                                class="sm:text-[3.75rem] text-[2.1875rem] font-[600] leading-[3.75rem] sm:tracking-[0.1125rem] tracking-[0.06563rem] font-[sourcesans]">
                                 12000➕</h1>
                             <p
                                 class="sm:text-[1.25rem] text-[#747171] text-[1.125rem] font-[400] leading-[1.5625rem] tracking-[0.03375rem] text-center">
@@ -438,7 +456,7 @@
                         </div>
                         <div class="items-center">
                             <h1
-                                class="sm:text-[3.75rem] text-[2.1875rem] font-[600] leading-[3.75rem] sm:tracking-[0.1125rem] tracking-[0.06563rem] font-sourcesans">
+                                class="sm:text-[3.75rem] text-[2.1875rem] font-[600] leading-[3.75rem] sm:tracking-[0.1125rem] tracking-[0.06563rem] font-[sourcesans]">
                                 20000➕</h1>
                             <p
                                 class="sm:text-[1.25rem] text-[#747171] text-[1.125rem] font-[400] leading-[1.5625rem] tracking-[0.03375rem] text-center">
@@ -448,7 +466,7 @@
                     <div class="w-full flex justify-between mt-[3.25rem]">
                         <div class="items-center">
                             <h1
-                                class="sm:text-[3.75rem] text-[2.1875rem] font-[600] leading-[3.75rem] sm:tracking-[0.1125rem] tracking-[0.06563rem] font-sourcesans">
+                                class="sm:text-[3.75rem] text-[2.1875rem] font-[600] leading-[3.75rem] sm:tracking-[0.1125rem] tracking-[0.06563rem] font-[sourcesans]">
                                 35000➕</h1>
                             <p
                                 class="sm:text-[1.25rem] text-[#747171] text-[1.125rem] font-[400] leading-[1.5625rem] tracking-[0.03375rem] text-center">
@@ -456,7 +474,7 @@
                         </div>
                         <div class="items-center">
                             <h1
-                                class="sm:text-[3.75rem] text-[2.1875rem] font-[600] leading-[3.75rem] sm:tracking-[0.1125rem] tracking-[0.06563rem] font-sourcesans">
+                                class="sm:text-[3.75rem] text-[2.1875rem] font-[600] leading-[3.75rem] sm:tracking-[0.1125rem] tracking-[0.06563rem] font-[sourcesans]">
                                 14000➕</h1>
                             <p
                                 class="sm:text-[1.25rem] text-[#747171] text-[1.125rem] font-[400] leading-[1.5625rem] tracking-[0.03375rem] text-center">
@@ -483,7 +501,7 @@
                 class="flex sm:flex-row flex-col h-full justify-center space-y-[0.87rem] items-center sm:px-[7.44rem] sm:space-x-[5.81rem]">
                 <div class=" sm:w-[37.0625rem] w-[16.375rem] sm:text-start text-center">
                     <h3
-                        class="sm:text-[2.3125rem] text-[1rem] font-[600] sm:leading-[3.4375rem] leading-5 text-[#FAF8F8] font-manrope">
+                        class="sm:text-[2.3125rem] text-[1rem] font-[600] sm:leading-[3.4375rem] leading-5 text-[#FAF8F8] font-[manrope]">
                         Subscribe to our Newsletter for the latest books and updates
                     </h3>
                 </div>
@@ -493,7 +511,7 @@
                         style=" border:1px solid; background-color:transparent; color:#FAF8F8; border-radius:10px 0px 0px 10px;"
                         placeholder="Your Email Address" />
                     <button
-                        class="bg-[#3FB2E5] sm:w-[11.0625rem] w-[5.6875rem] p-[0.625rem] sm:h-[5.3125rem] text-[#FAF8F8] text-[0.75rem] leading-[3.125rem] font-[700] sm:text-[1.375rem] font-manrope rounded-tr-[0.5625rem] rounded-br-[0.5625rem]">Subscribe</button>
+                        class="bg-[#3FB2E5] sm:w-[11.0625rem] w-[5.6875rem] p-[0.625rem] sm:h-[5.3125rem] text-[#FAF8F8] text-[0.75rem] leading-[3.125rem] font-[700] sm:text-[1.375rem] font-[manrope] rounded-tr-[0.5625rem] rounded-br-[0.5625rem]">Subscribe</button>
                 </div>
             </div>
         </section>
@@ -577,7 +595,7 @@
                     </div>
 
                     <p
-                        class="sm:text-[1rem] text-[0.75rem] leading-[1.25rem] font-[600] font-manrope text-[#827F7F] my-4">
+                        class="sm:text-[1rem] text-[0.75rem] leading-[1.25rem] font-[600] font-[manrope] text-[#827F7F] my-4">
                         A must read book for anyone who is exploring philosophical ideas
                         through a comelling and engaging story and interested in exploring
                         themes such as cultural indifference interested in exploring
@@ -586,16 +604,16 @@
                 </article>
 
                 <div class=" justify-self-start">
-                    <h3 class=" font-[700] leading-[3.125rem] text-[1.5rem] font-manrope">Get in Touch Us</h3>
+                    <h3 class=" font-[700] leading-[3.125rem] text-[1.5rem] font-[manrope]">Get in Touch Us</h3>
                     <div class="sm:space-y-[1.38rem] space-y-[0.56rem]">
                         <p
-                            class="sm:text-[1rem] text-[0.75rem] font-[600] leading-[1.5625rem] font-manrope text-[#827F7F]">
+                            class="sm:text-[1rem] text-[0.75rem] font-[600] leading-[1.5625rem] font-[manrope] text-[#827F7F]">
                             📍 1 Ogunlesi street, Onipanu, lagos</p>
                         <p
-                            class="sm:text-[1rem] text-[0.75rem] font-[600] leading-[1.5625rem] font-manrope text-[#827F7F]">
+                            class="sm:text-[1rem] text-[0.75rem] font-[600] leading-[1.5625rem] font-[manrope] text-[#827F7F]">
                             📞 +234 814 6745 450</p>
                         <p
-                            class="sm:text-[1rem] text-[0.75rem] font-[600] leading-[1.5625rem] font-manrope text-[#827F7F]">
+                            class="sm:text-[1rem] text-[0.75rem] font-[600] leading-[1.5625rem] font-[manrope] text-[#827F7F]">
                             ✉️ support@bookers.com</p>
                     </div>
                 </div>
@@ -614,6 +632,11 @@
 
         </section>
     </main>
+
+
+
+
+
 </body>
 
 </html>
